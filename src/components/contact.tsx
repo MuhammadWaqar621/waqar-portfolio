@@ -8,8 +8,9 @@ const links = [
   {
     label: "LinkedIn",
     href: profile.linkedin,
-    value: "linkedin.com/in/muhammad-waqar",
+    value: "linkedin.com/in/muhammad-waqar-1a594411a",
   },
+  { label: "WhatsApp", href: profile.whatsapp, value: profile.phone },
 ];
 
 export function Contact() {
