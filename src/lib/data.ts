@@ -8,7 +8,7 @@ export const profile = {
   github: "https://github.com/MuhammadWaqar621",
   linkedin: "https://www.linkedin.com/in/muhammad-waqar-1a594411a/",
   whatsapp: "https://wa.me/923086715563",
-  bio: "AI Lead Engineer with 5+ years building production AI systems — from agentic RAG pipelines and multi-agent orchestration to computer vision and NLP at scale. Currently leading generative AI and compliance-automation platforms at Softoo, after leading ML teams at Forbmax and Horizon Tech Services. Specialized in hybrid local/cloud LLM architectures (Llama, DeepSeek, Azure OpenAI) for secure, cost-efficient enterprise deployment.",
+  bio: "AI Lead Engineer with 7+ years building production AI systems — from agentic RAG pipelines and multi-agent orchestration to computer vision and NLP at scale. Currently leading generative AI and compliance-automation platforms at Softoo, after leading ML teams at Forbmax and Horizon Tech Services. Specialized in hybrid local/cloud LLM architectures (Llama, DeepSeek, Azure OpenAI) for secure, cost-efficient enterprise deployment.",
 };
 
 export const skillGroups = [

@@ -1,5 +1,6 @@
 import { SiteHeader } from "@/components/site-header";
 import { Hero } from "@/components/hero";
+import { Stats } from "@/components/stats";
 import { Skills } from "@/components/skills";
 import { Experience } from "@/components/experience";
 import { Projects } from "@/components/projects";
@@ -12,6 +13,7 @@ export default function Home() {
       <SiteHeader />
       <main className="flex-1">
         <Hero />
+        <Stats />
         <Skills />
         <Experience />
         <Projects />
