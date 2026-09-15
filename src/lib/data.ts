@@ -21,8 +21,11 @@ export const skillGroups = [
       "LangChain",
       "LangGraph",
       "Prompt Engineering",
+      "OpenAI SDK",
       "Azure OpenAI",
+      "GCP / Vertex AI",
       "Groq",
+      "On-Prem LLM Hosting",
     ],
   },
   {
