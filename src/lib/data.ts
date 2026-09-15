@@ -157,9 +157,9 @@ export const projects: Project[] = [
   {
     name: "Enterprise Compliance AI Agent Platform",
     period: "Sep 2026",
-    stack: ["Agentic AI", "RAG", "LangChain", "LangGraph"],
+    stack: ["Agentic AI", "LangGraph", "Risk & Control Automation", "SAMA / ISO / BCM"],
     description:
-      "Multi-agent platform automating compliance checks across policies, contracts, and logs, with a production-grade RAG pipeline and hybrid local/cloud LLMs, plus guardrails and full decision traceability for auditors.",
+      "Multi-agent AI audit platform spanning compliance domains including BCM, SAMA, and ISO standards, with automated maturity assessments. Plans and runs full audit engagements end-to-end — generating risk and control matrices, executing control tests, and producing audit reports — backed by a production-grade RAG pipeline, hybrid local/cloud LLMs, and full decision traceability for auditors.",
   },
   {
     name: "Private Data Assistant — Text-to-SQL over Live Databases",
