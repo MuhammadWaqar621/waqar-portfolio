@@ -42,17 +42,6 @@ export function Projects() {
               </div>
 
               <div className="mt-4 flex flex-wrap items-center gap-4 text-xs">
-                {project.repoUrl && (
-                  <a
-                    href={project.repoUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-1.5 text-muted transition-colors hover:text-accent"
-                  >
-                    <GithubIcon className="h-3.5 w-3.5" />
-                    View code
-                  </a>
-                )}
                 {project.liveUrl && (
                   <a
                     href={project.liveUrl}
@@ -62,6 +51,17 @@ export function Projects() {
                   >
                     <ExternalLinkIcon className="h-3.5 w-3.5" />
                     Live demo
+                  </a>
+                )}
+                {project.repoUrl && (
+                  <a
+                    href={project.repoUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="flex items-center gap-1.5 text-muted transition-colors hover:text-accent"
+                  >
+                    <GithubIcon className="h-3.5 w-3.5" />
+                    View code
                   </a>
                 )}
                 {!project.repoUrl && !project.liveUrl && (
