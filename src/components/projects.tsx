@@ -6,7 +6,7 @@ export function Projects() {
   return (
     <section id="projects" className="mx-auto max-w-5xl px-6 py-20">
       <Reveal>
-        <SectionHeading eyebrow="Projects" title="Selected work" />
+        <SectionHeading eyebrow="Projects" title="Projects I've built" />
       </Reveal>
 
       <div className="grid gap-6 sm:grid-cols-2">
