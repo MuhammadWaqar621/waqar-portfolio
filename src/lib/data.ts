@@ -55,12 +55,12 @@ export const skillGroups = [
     label: "Data & Retrieval",
     items: [
       "PostgreSQL",
-      "pgvector",
       "MySQL",
       "SQL Server",
       "MongoDB",
       "Text-to-SQL",
-      "Vector Search",
+      "SQLAlchemy",
+      "Alembic Migrations",
     ],
   },
   {
@@ -164,14 +164,14 @@ export const projects: Project[] = [
   {
     name: "Private Data Assistant — Text-to-SQL over Live Databases",
     period: "Jul 2026",
-    stack: ["Text-to-SQL", "Multi-DB Adapters", "Read-only SQL Guard", "pgvector"],
+    stack: ["Text-to-SQL", "Multi-DB Adapters", "Read-only SQL Guard", "Fernet Encryption"],
     description:
       "Natural-language querying over a user's own live database (Postgres, MySQL, SQL Server, SQLite, or MongoDB) — retrieves relevant tables via schema-aware RAG, generates the query, and answers with an optional chart. A five-layer, per-engine read-only guard (keyword blocking, forced rollback, timeouts, row caps) keeps execution safe.",
   },
   {
     name: "Private Document Assistant — Agentic RAG Chatbot",
     period: "Jun 2026",
-    stack: ["Agentic RAG", "pgvector", "Azure OpenAI", "Multi-tenant Isolation"],
+    stack: ["Agentic RAG", "Azure OpenAI", "SSE Streaming", "Multi-tenant Isolation"],
     description:
       "Private RAG chatbot over a user's own documents (PDF/DOCX/scanned images with OCR fallback), with strict per-user and per-chat vector isolation. The model decides per-turn whether to call a retrieval tool rather than always grounding, avoiding spurious refusals on plain greetings; responses stream via SSE.",
   },
