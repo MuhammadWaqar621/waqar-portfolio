@@ -155,32 +155,32 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "Private Data Assistant — Text-to-SQL over Live Databases",
+    name: "Enterprise Compliance AI Agent Platform",
     period: "Sep 2026",
+    stack: ["Agentic AI", "RAG", "LangChain", "LangGraph"],
+    description:
+      "Multi-agent platform automating compliance checks across policies, contracts, and logs, with a production-grade RAG pipeline and hybrid local/cloud LLMs, plus guardrails and full decision traceability for auditors.",
+  },
+  {
+    name: "Private Data Assistant — Text-to-SQL over Live Databases",
+    period: "Jul 2026",
     stack: ["Text-to-SQL", "Multi-DB Adapters", "Read-only SQL Guard", "pgvector"],
     description:
       "Natural-language querying over a user's own live database (Postgres, MySQL, SQL Server, SQLite, or MongoDB) — retrieves relevant tables via schema-aware RAG, generates the query, and answers with an optional chart. A five-layer, per-engine read-only guard (keyword blocking, forced rollback, timeouts, row caps) keeps execution safe.",
   },
   {
     name: "Private Document Assistant — Agentic RAG Chatbot",
-    period: "Sep 2026",
+    period: "Jun 2026",
     stack: ["Agentic RAG", "pgvector", "Azure OpenAI", "Multi-tenant Isolation"],
     description:
       "Private RAG chatbot over a user's own documents (PDF/DOCX/scanned images with OCR fallback), with strict per-user and per-chat vector isolation. The model decides per-turn whether to call a retrieval tool rather than always grounding, avoiding spurious refusals on plain greetings; responses stream via SSE.",
   },
   {
     name: "Private Voice Assistant — Real-time AI Phone Helpline",
-    period: "Sep 2026",
+    period: "May 2026",
     stack: ["Twilio Voice", "Whisper STT", "Orpheus TTS", "Real-time Voice AI"],
     description:
       "Runtime-configurable AI voice helpline reachable by phone (Twilio) or browser hold-to-talk demo, sharing one Groq-powered STT → LLM → TTS pipeline. Tuned to a 2–2.7s full turn latency via connection warm-up and cached greetings, with caller language auto-detected from speech to adapt responses.",
-  },
-  {
-    name: "Enterprise Compliance AI Agent Platform",
-    period: "Nov 2025",
-    stack: ["Agentic AI", "RAG", "LangChain", "LangGraph"],
-    description:
-      "Multi-agent platform automating compliance checks across policies, contracts, and logs, with a production-grade RAG pipeline and hybrid local/cloud LLMs, plus guardrails and full decision traceability for auditors.",
   },
   {
     name: "WellB — AI-Powered Hotel Management System",
