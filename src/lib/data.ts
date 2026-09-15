@@ -105,7 +105,7 @@ export const experience: Experience[] = [
     bullets: [
       "Leading agentic AI and RAG pipeline development for intelligent enterprise automation and decision-making platforms.",
       "Architecting multi-agent frameworks with autonomous reasoning for complex task orchestration.",
-      "Designing RAG architectures with vector databases and semantic search for enterprise knowledge retrieval.",
+      "Designing RAG architectures with semantic search and knowledge retrieval pipelines for enterprise knowledge management.",
       "Deploying local LLMs (SQLCoder, Llama, Code Llama) for secure, on-premise AI with reduced inference cost.",
       "Building AI-powered audit systems for automated compliance checking and risk assessment.",
     ],
@@ -173,7 +173,7 @@ export const projects: Project[] = [
     period: "Mar 2026",
     stack: ["Agentic RAG", "Azure OpenAI", "SSE Streaming", "Multi-tenant Isolation"],
     description:
-      "Private RAG chatbot over a user's own documents (PDF/DOCX/scanned images with OCR fallback), with strict per-user and per-chat vector isolation. The model decides per-turn whether to call a retrieval tool rather than always grounding, avoiding spurious refusals on plain greetings; responses stream via SSE.",
+      "Private RAG chatbot over a user's own documents (PDF/DOCX/scanned images with OCR fallback), with strict per-user and per-chat data isolation. The model decides per-turn whether to call a retrieval tool rather than always grounding, avoiding spurious refusals on plain greetings; responses stream via SSE.",
   },
   {
     name: "Private Voice Assistant — Real-time AI Phone Helpline",
