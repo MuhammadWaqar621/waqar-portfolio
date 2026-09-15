@@ -163,21 +163,21 @@ export const projects: Project[] = [
   },
   {
     name: "Private Data Assistant — Text-to-SQL over Live Databases",
-    period: "Jul 2026",
+    period: "Jun 2026",
     stack: ["Text-to-SQL", "Multi-DB Adapters", "Read-only SQL Guard", "Fernet Encryption"],
     description:
       "Natural-language querying over a user's own live database (Postgres, MySQL, SQL Server, SQLite, or MongoDB) — retrieves relevant tables via schema-aware RAG, generates the query, and answers with an optional chart. A five-layer, per-engine read-only guard (keyword blocking, forced rollback, timeouts, row caps) keeps execution safe.",
   },
   {
     name: "Private Document Assistant — Agentic RAG Chatbot",
-    period: "Jun 2026",
+    period: "Mar 2026",
     stack: ["Agentic RAG", "Azure OpenAI", "SSE Streaming", "Multi-tenant Isolation"],
     description:
       "Private RAG chatbot over a user's own documents (PDF/DOCX/scanned images with OCR fallback), with strict per-user and per-chat vector isolation. The model decides per-turn whether to call a retrieval tool rather than always grounding, avoiding spurious refusals on plain greetings; responses stream via SSE.",
   },
   {
     name: "Private Voice Assistant — Real-time AI Phone Helpline",
-    period: "May 2026",
+    period: "Dec 2025",
     stack: ["Twilio Voice", "Whisper STT", "Orpheus TTS", "Real-time Voice AI"],
     description:
       "Runtime-configurable AI voice helpline reachable by phone (Twilio) or browser hold-to-talk demo, sharing one Groq-powered STT → LLM → TTS pipeline. Tuned to a 2–2.7s full turn latency via connection warm-up and cached greetings, with caller language auto-detected from speech to adapt responses.",
@@ -192,28 +192,28 @@ export const projects: Project[] = [
   {
     name: "IntelliReport — AI-Powered Report Generation",
     period: "Sep 2024",
-    stack: ["Python", "NLP", "Transformers", "FastAPI"],
+    stack: ["BERT", "Text Summarization", "Topic Extraction", "FastAPI"],
     description:
       "BERT-based topic extraction and extractive/abstractive summarization system with topic-wise summaries, smart highlighting, and a scalable API supporting batch processing.",
   },
   {
     name: "Smart Media Monitoring Application",
     period: "Aug 2023",
-    stack: ["Python", "PyTorch"],
+    stack: ["Speech-to-Text", "Facial Recognition", "Multi-language OCR"],
     description:
       "Multi-model media monitoring pipeline covering speech-to-text, sentiment analysis, summarization, topic modeling, facial recognition, and multi-language OCR for Urdu, English, and Arabic.",
   },
   {
     name: "Smart Surveillance System",
     period: "Dec 2022",
-    stack: ["Python", "PyTorch", "TensorFlow"],
+    stack: ["Object Detection", "ANPR", "Geofencing"],
     description:
       "Real-time security monitoring across live and IP camera streams — object detection, ANPR, geofencing, and video summarization for efficient footage review.",
   },
   {
     name: "AAQAB — Satellite Imagery Intelligence",
     period: "Feb 2022",
-    stack: ["Python", "YOLO", "PyTorch"],
+    stack: ["YOLO", "SAHI", "Distributed GPU Processing"],
     description:
       "YOLO/ResNet-based object detection pipeline for high-resolution satellite imagery, with distributed large-image processing and automated PRSS analysis workflows.",
   },
