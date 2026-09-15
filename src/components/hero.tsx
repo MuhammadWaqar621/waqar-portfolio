@@ -57,6 +57,13 @@ export function Hero() {
             >
               Get in touch
             </a>
+            <a
+              href="/Muhammad-Waqar-Resume.pdf"
+              download
+              className="rounded-full border border-border px-5 py-2.5 text-sm font-medium transition-colors hover:bg-surface"
+            >
+              Download resume
+            </a>
 
             <div className="ml-1 flex items-center gap-2">
               <a

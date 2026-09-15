@@ -10,6 +10,7 @@ export function Typewriter({ phrases }: { phrases: string[] }) {
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- reads browser-only matchMedia, must run client-side after mount
       setText(phrases[0]);
       return;
     }

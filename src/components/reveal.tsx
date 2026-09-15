@@ -17,6 +17,7 @@ export function Reveal({
     if (!el) return;
 
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect -- reads browser-only matchMedia, must run client-side after mount
       setVisible(true);
       return;
     }

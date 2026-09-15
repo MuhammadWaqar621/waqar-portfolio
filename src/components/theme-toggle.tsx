@@ -29,6 +29,7 @@ export function ThemeToggle() {
   useEffect(() => {
     const stored = getStored();
     const initial = stored ?? getSystemTheme();
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- reads browser-only APIs (localStorage/matchMedia), must run client-side after mount
     setTheme(initial);
     applyTheme(initial);
 

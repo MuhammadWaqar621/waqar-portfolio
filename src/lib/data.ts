@@ -151,6 +151,7 @@ export type Project = {
   period: string;
   stack: string[];
   description: string;
+  url?: string;
 };
 
 export const projects: Project[] = [
@@ -162,7 +163,16 @@ export const projects: Project[] = [
       "An AI audit platform covering BCM, SAMA, and ISO compliance work, including maturity assessments. It plans and runs the whole audit: generating the risk and control matrix, running the actual control tests, and writing the report, using a mix of local and cloud LLMs so auditors can trace every decision back to where it came from.",
   },
   {
+    name: "ActPilot — AI Browser Agent",
+    period: "Sep 2026",
+    stack: ["Chrome Extension (MV3)", "Azure OpenAI (Vision)", "Groq Fallback", "FastAPI"],
+    url: "https://github.com/MuhammadWaqar621/actpilot",
+    description:
+      "A browser extension that actually acts on the page for you. It reads the visible text, grabs a screenshot, and can fill fields, click buttons, or open links based on what you ask, then it can chart data it finds or export the whole conversation as a PDF. Runs on Azure OpenAI's vision model with an automatic fallback to Groq if Azure gets rate-limited. I built in a hard safety rule too: it'll fill out a form, but it won't hit submit, pay, delete, or send anything unless I explicitly tell it to.",
+  },
+  {
     name: "Private Data Assistant — Text-to-SQL over Live Databases",
+    url: "https://github.com/MuhammadWaqar621/private-data-assistant",
     period: "Jun 2026",
     stack: ["Text-to-SQL", "Multi-DB Adapters", "Read-only SQL Guard", "Fernet Encryption"],
     description:
@@ -170,6 +180,7 @@ export const projects: Project[] = [
   },
   {
     name: "Private Document Assistant — Agentic RAG Chatbot",
+    url: "https://github.com/MuhammadWaqar621/private-document-assistant",
     period: "Mar 2026",
     stack: ["Agentic RAG", "Azure OpenAI", "SSE Streaming", "Multi-tenant Isolation"],
     description:
@@ -177,6 +188,7 @@ export const projects: Project[] = [
   },
   {
     name: "Private Voice Assistant — Real-time AI Phone Helpline",
+    url: "https://github.com/MuhammadWaqar621/private-voice-assistant",
     period: "Dec 2025",
     stack: ["Twilio Voice", "Whisper STT", "Orpheus TTS", "Real-time Voice AI"],
     description:
