@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/section-heading";
 import { Reveal } from "@/components/reveal";
 import { GithubIcon, LinkedinIcon, WhatsappIcon } from "@/components/icons";
 
-const links = [
+const infoLinks = [
   {
     label: "Email",
     href: `mailto:${profile.email}`,
@@ -25,36 +25,54 @@ const links = [
       </svg>
     ),
   },
-  { label: "GitHub", href: profile.github, value: "github.com/MuhammadWaqar621", icon: GithubIcon },
-  {
-    label: "LinkedIn",
-    href: profile.linkedin,
-    value: "linkedin.com/in/muhammad-waqar-1a594411a",
-    icon: LinkedinIcon,
-  },
-  { label: "WhatsApp", href: profile.whatsapp, value: profile.phone, icon: WhatsappIcon },
+];
+
+const socialLinks = [
+  { label: "GitHub", href: profile.github, icon: GithubIcon },
+  { label: "LinkedIn", href: profile.linkedin, icon: LinkedinIcon },
+  { label: "WhatsApp", href: profile.whatsapp, icon: WhatsappIcon },
 ];
 
 export function Contact() {
   return (
     <section id="contact" className="mx-auto max-w-5xl px-6 py-20">
       <Reveal>
-        <SectionHeading eyebrow="Contact" title="Let's work together" />
+        <div className="flex flex-wrap items-start justify-between gap-6">
+          <div>
+            <SectionHeading eyebrow="Contact" title="Let's work together" />
+            <p className="max-w-xl text-base leading-relaxed text-muted">
+              Open to conversations about generative AI, RAG systems, and
+              agentic platforms. Reach out through any of the channels below.
+            </p>
+          </div>
 
-        <p className="max-w-xl text-base leading-relaxed text-muted">
-          Open to conversations about generative AI, RAG systems, and agentic
-          platforms. Reach out through any of the channels below.
-        </p>
+          <div className="flex items-center gap-3">
+            {socialLinks.map((link) => {
+              const Icon = link.icon;
+              return (
+                <a
+                  key={link.label}
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label={link.label}
+                  title={link.label}
+                  className="flex h-12 w-12 items-center justify-center rounded-full border border-border bg-surface text-foreground transition-all hover:-translate-y-0.5 hover:border-accent hover:text-accent hover:shadow-lg hover:shadow-accent-soft"
+                >
+                  <Icon className="h-5 w-5" />
+                </a>
+              );
+            })}
+          </div>
+        </div>
 
         <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {links.map((link) => {
+          {infoLinks.map((link) => {
             const Icon = link.icon;
             return (
               <a
                 key={link.label}
                 href={link.href}
-                target={link.href.startsWith("http") ? "_blank" : undefined}
-                rel={link.href.startsWith("http") ? "noreferrer" : undefined}
                 className="group flex items-center gap-4 rounded-xl border border-border bg-surface p-5 transition-all hover:-translate-y-0.5 hover:border-accent/50 hover:shadow-lg hover:shadow-accent-soft"
               >
                 <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-accent-soft text-accent transition-colors">
