@@ -1,0 +1,287 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Muhammad Waqar} \\ \vspace{1pt}
+    \small +923086715563 $|$ \href{mailto:waqarsahi621@gmail.com}{\underline{waqarsahi621@gmail.com}} $|$
+    \href{https://www.linkedin.com/in/muhammad-waqar-1a594411a/}{\underline{linkedin.com/in/muhammad-waqar-1a594411a}} $|$
+    \href{https://github.com/MuhammadWaqar621}{\underline{github.com/MuhammadWaqar621}} $|$
+    \href{https://muhammadwaqar-ai.vercel.app}{\underline{muhammadwaqar-ai.vercel.app}} $|$ Islamabad, Pakistan
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Engineering and Technology (UET)}{Oct. 2015 -- Aug. 2019}
+      {Bachelor of Science in Computer Engineering}{Taxila, Punjab}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Softoo}{May 2025 -- Present}
+      {AI Lead Engineer: Generative AI | RAG Systems | AI Agents}{Islamabad, Punjab}
+      \resumeItemListStart
+        \resumeItem{Leading AI agentic systems development and RAG (Retrieval-Augmented Generation) pipeline implementation for intelligent enterprise automation and decision-making platforms.}
+        \resumeItem{Architecting multi-agent AI frameworks with autonomous reasoning capabilities, enabling complex task orchestration and self-improving system behaviors.}
+        \resumeItem{Designing and deploying advanced RAG architectures with vector databases, semantic search, and context-aware knowledge retrieval for enterprise knowledge management systems.}
+        \resumeItem{Specialized in local deployment of large language models including SQLCoder, Llama, and Code Llama for secure on-premise AI solutions, ensuring data privacy and reduced inference costs.}
+        \resumeItem{Developed comprehensive AI-powered audit systems covering BCM, SAMA, and ISO compliance domains for automated compliance checking, risk assessment, and regulatory validation, streamlining audit processes through intelligent document analysis and anomaly detection.}
+        \resumeItem{Mentoring junior engineers and establishing best practices for AI agentic development lifecycle and model governance in production environments.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Forbmax (pvt) Ltd}{May 2023 -- May 2025}
+      {AI Team Lead: Computer Vision | NLP | Data Science}{Islamabad, Punjab}
+      \resumeItemListStart
+        \resumeItem{Led a team of machine learning professionals, providing strategic guidance and technical mentorship to drive innovative solutions and collaborative efforts across multiple AI domains.}
+        \resumeItem{Designed and developed advanced machine learning models for mission-critical applications, ensuring high performance and reliability with comprehensive testing and validation frameworks.}
+        \resumeItem{Created and optimized end-to-end model pipelines, streamlining data preprocessing and model deployment processes, improving operational efficiency by 40\% through automated workflows.}
+        \resumeItem{Implemented custom training frameworks and fine-tuning strategies for transformer models, YOLO architectures, and computer vision models to achieve domain-specific performance improvements.}
+        \resumeItem{Spearheaded fine-tuning of large language models and vision transformers using transfer learning techniques, achieving significant accuracy improvements on specialized datasets and business-specific use cases.}
+        \resumeItem{Automated the annotation process through development of intelligent labeling systems and active learning frameworks, reducing manual annotation effort by 70\% while maintaining data quality and consistency.}
+        \resumeItem{Championed the design of robust APIs and microservices architecture, enhancing product accessibility and ensuring seamless integration with external systems and platforms for scalable AI solutions.}
+        \resumeItem{Managed the successful deployment of machine learning solutions in production environments, optimizing real-time processing capabilities and reducing operational costs through efficient resource utilization.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Horizon Tech Services}{Jun. 2020 -- April 2023}
+      {Sr.AI Engineer}{Islamabad, Punjab}
+      \resumeItemListStart
+        \resumeItem{Served as a Senior AI Engineer, responsible for leading end-to-end machine learning projects while providing strategic guidance and mentorship to a dedicated team of professionals.}
+        \resumeItem{Managed and supervised data creation, preprocessing, model training, and deployment for a variety of applications, ensuring data quality and model effectiveness.}
+        \resumeItem{Oversaw extensive data handling, including data collection, cleaning, and annotation, to support the development of high-performing machine learning models.}
+        \resumeItem{Designed and implemented robust data preprocessing pipelines, optimizing feature extraction and data augmentation techniques for enhanced model performance.}
+        \resumeItem{Led the fine-tuning and optimization of models, with a particular focus on object detection, resulting in improved object recognition and tracking.}
+        \resumeItem{Managed the deployment of machine learning solutions in production environments, collaborating cross-functionally to guarantee seamless integration and real-time processing.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Lampro Mellon IT Solutions Pvt. Ltd}{Aug. 2019 -- May 2020}
+      {Python Developer}{Lahore, Punjab}
+      \resumeItemListStart
+        \resumeItem{Worked as a Junior Python Developer, contributing to the development of software components with a focus on verification and high-level programming design.}
+        \resumeItem{Collaborated with experienced team members to design and implement software modules, ensuring they meet quality and reliability standards.}
+        \resumeItem{Assisted in the creation of automated verification scripts and tools to streamline the testing and validation processes.}
+        \resumeItem{Participated in code reviews to learn and improve software quality and coding practices.}
+        \resumeItem{Contributed to the design and architecture of software systems, applying theoretical knowledge gained during education.}
+        \resumeItem{Worked on algorithm implementation and data processing, applying problem-solving skills to real-world challenges.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{Enterprise Compliance AI Agent Platform} $|$ \emph{Agentic AI, RAG, LangGraph}}{Sep 2026}
+          \resumeItemListStart
+            \resumeItem{Designed and implemented an agentic AI audit platform covering BCM, SAMA, and ISO compliance domains, including automated maturity assessments across policies, contracts, and internal documentation.}
+            \resumeItem{Built an end-to-end audit workflow that plans engagements, generates risk and control matrices, executes control tests, and produces audit-ready reports, orchestrated with LangGraph and LangChain.}
+            \resumeItem{Built a production-grade RAG pipeline with vector stores and semantic search to ground LLM outputs in enterprise knowledge, improving factual accuracy and traceability of responses.}
+            \resumeItem{Deployed a hybrid LLM architecture combining self-hosted local models (Llama, DeepSeek) for sensitive data processing with Azure OpenAI/OpenAI APIs for high-quality generation where allowed.}
+            \resumeItem{Implemented guardrails, audit logging, and policy-enforcement layers, including full decision traceability so auditors can trace every finding back to its source. Live at \href{https://yanipro.ai/}{\underline{yanipro.ai}}.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{ActPilot -- AI Browser Agent} $|$ \emph{Chrome Extension, Azure OpenAI, Groq}}{Aug 2026}
+          \resumeItemListStart
+            \resumeItem{Built a Chrome/Edge browser extension (Manifest V3) that reads a page's visible text and a screenshot, then executes real actions on the page (fill fields, click, open links) based on natural-language requests.}
+            \resumeItem{Designed the backend to return one structured JSON response per request, restricting execution to a closed set of actions referencing only elements the model was actually given, preventing hallucinated targets.}
+            \resumeItem{Implemented a hard safety rule so the agent can fill out forms but never submits, pays, deletes, or sends anything unless explicitly instructed.}
+            \resumeItem{Ran on Azure OpenAI's vision-capable model with automatic fallback to Groq on rate-limit errors, keeping the assistant responsive under load.}
+            \resumeItem{Added chart generation and branded PDF export of conversations, with rate limiting and a hosted privacy policy in preparation for Chrome Web Store submission.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Private Data Assistant} $|$ \emph{Text-to-SQL, Multi-DB, Read-only Guard}}{Apr 2026}
+          \resumeItemListStart
+            \resumeItem{Built a text-to-SQL/NoSQL assistant that connects to a user's own live database (PostgreSQL, MySQL, SQL Server, SQLite, or MongoDB) and answers natural-language questions with auto-generated queries.}
+            \resumeItem{Implemented schema-aware RAG to retrieve the relevant tables for each question, with few-shot examples seeded from foreign-key relationships and successful past queries.}
+            \resumeItem{Designed a five-layer, per-engine read-only execution guard (keyword blocking, forced rollback, statement timeouts, row caps) to guarantee the assistant can only ever read data.}
+            \resumeItem{Encrypted stored database credentials with Fernet symmetric encryption, so registered connections are never stored or used in plaintext.}
+            \resumeItem{Added optional chart generation for query results, rendered through a React/Chart.js frontend.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Private Document Assistant} $|$ \emph{Agentic RAG, Azure OpenAI, SSE}}{Jan 2026}
+          \resumeItemListStart
+            \resumeItem{Built a private RAG chatbot for a user's own documents (PDF/DOCX/scanned images with OCR fallback), with strict per-user and per-chat data isolation enforced at the vector-store layer.}
+            \resumeItem{Implemented an agentic tool-calling loop where the model decides per turn whether to retrieve from documents, avoiding spurious grounded-refusals on plain conversational messages.}
+            \resumeItem{Streamed responses token-by-token via Server-Sent Events for a responsive chat experience.}
+            \resumeItem{Used Azure OpenAI for embeddings with a configurable Groq/Azure chat backend, and JWT-based authentication for account and session security.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Private Voice Assistant} $|$ \emph{Twilio, Whisper STT, Orpheus TTS}}{Aug 2025}
+          \resumeItemListStart
+            \resumeItem{Built a runtime-configurable AI voice helpline usable by any business, reachable via real phone calls (Twilio) or a browser hold-to-talk demo, sharing one Groq-powered pipeline.}
+            \resumeItem{Tuned the full conversational turn (speech-to-text, LLM, text-to-speech) down to a 2--2.7 second latency through connection warm-up and cached greetings.}
+            \resumeItem{Implemented automatic caller language detection from speech, adapting the assistant's spoken replies accordingly.}
+            \resumeItem{Designed the Twilio integration around HTTP-based polling rather than WebSocket media streams specifically so the service could run on serverless infrastructure.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{WellB - AI-Powered Hotel Management System} $|$ \emph{RAG, Llama, OpenAI}}{Feb. 2025}
+          \resumeItemListStart
+            \resumeItem{Developed comprehensive AI chatbot ``WellB'' using RAG pipeline with local deployment of Llama and DeepSeek models, integrated with OpenAI GPT for enhanced conversational capabilities.}
+            \resumeItem{Implemented intelligent hotel booking system with multi-model AI approach, enabling natural language booking management through locally deployed and cloud-based LLMs.}
+            \resumeItem{Built emergency alert system with real-time notifications and intelligent priority classification using hybrid AI model architecture.}
+            \resumeItem{Created AI-driven contact management with automated data extraction and contact addition using local Llama model deployment for data privacy.}
+            \resumeItem{Developed booking edit functionality with conflict detection and automated rescheduling using DeepSeek model for complex reasoning tasks.}
+            \resumeItem{Integrated multiple AI services creating cohesive WellB platform with local and cloud-based model orchestration for optimal performance and cost efficiency.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{IntelliReport - AI-Powered Report Generation} $|$ \emph{Python, NLP, Transformers, FastAPI}}{Sep. 2024}
+          \resumeItemListStart
+            \resumeItem{Developed comprehensive AI-powered report generation system with automated text correction, topic extraction, and intelligent summarization capabilities using transformer-based models and BERT architectures.}
+            \resumeItem{Implemented advanced topic extraction engine utilizing BERT and custom NLP models to automatically identify and categorize key themes, subjects, and concepts from unstructured text data with hierarchical clustering.}
+            \resumeItem{Built intelligent summary generation system using extractive and abstractive summarization techniques to create concise, coherent summaries while preserving critical information and maintaining contextual coherence.}
+            \resumeItem{Created topic-wise summary functionality that segments documents by identified topics and generates targeted summaries for each category, enabling focused analysis and better content organization with semantic similarity scoring.}
+            \resumeItem{Deployed multi-format report generation with markdown and HTML rendering for direct frontend display and PDF download functionality for seamless user experience across different platforms and devices.}
+            \resumeItem{Built scalable API architecture supporting batch processing with real-time progress tracking and efficient memory management for large document handling and concurrent user requests with load balancing capabilities.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Smart Media Monitoring Application} $|$ \emph{Python, PyTorch}}{August 2023}
+          \resumeItemListStart
+            \resumeItem{Led a comprehensive media monitoring project, involving the development and deployment of multiple AI models, including Speech to Text conversion, sentiment analysis, summary generation, topic modeling, facial recognition, and OCR.}
+            \resumeItem{Worked with both Urdu and English datasets to ensure language versatility and provide valuable insights for the application's users.}
+            \resumeItem{Developed comprehensive text detection and OCR pipeline supporting multi-format document processing including PDFs, images, and tables with multi-language capabilities for Urdu, English, and Arabic text extraction.}
+            \resumeItem{Pioneered facial recognition solutions to identify and track individuals in media content, providing valuable insights for security and analytics.}
+            \resumeItem{Integrated a YouTube Vlogger Scrapper, automating data extraction for content analysis and audience insights.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Smart Surveillance System} $|$ \emph{Python, PyTorch and TensorFlow}}{December 2022}
+          \resumeItemListStart
+            \resumeItem{Led the Smart Surveillance project focused on live camera streams and IP cameras, specializing in AI modules for comprehensive security monitoring.}
+            \resumeItem{Live Object Detection: Implemented real-time object detection models for enhanced security and tracking with high accuracy and low latency performance.}
+            \resumeItem{ANPR (Automatic Number Plate Recognition): Developed a highly accurate ANPR system for vehicle monitoring and identification with multi-language support.}
+            \resumeItem{Geofencing: Created geofencing algorithms to define and enforce geographic boundaries within the camera streams for automated area monitoring.}
+            \resumeItem{Video Summarization: Designed video summarization techniques to condense lengthy footage into concise and informative summaries for efficient review.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{AAQAB Project} $|$ \emph{Python, Yolo, PyTorch}}{Feb. 2022}
+          \resumeItemListStart
+            \resumeItem{Led the AAQAB Project, utilizing YOLO (You Only Look Once) and ResNet for object detection in large images with focus on satellite imagery analysis and geospatial intelligence applications.}
+            \resumeItem{Large Image Processing: Worked on processing large images and splitting them based on latitude and longitude coordinates for efficient computational handling and distributed processing across multiple GPU clusters.}
+            \resumeItem{Object Detection with SAHI: Implemented object detection algorithms with a focus on accurate object counting in high-resolution satellite imagery using sliding window approach for enhanced detection accuracy.}
+            \resumeItem{PRSS Image Pipeline: Developed a comprehensive pipeline for PRSS (Pakistan Remote Sensing Satellite) image analysis with automated processing workflows and quality assurance mechanisms for consistent results.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+  \resumeSubHeadingListStart
+    \resumeSubItem{\textbf{Meter Digit Recognition Via Faster R-CNN} -- Muhammad Waqar, M. Waris, et al., M. Yousaf. \emph{International Conference on Robotics and Automation in Industry (ICRAI)}, Oct 2019. DOI: 10.1109/ICRAI47710.2019.8967357.}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Generative AI \& Agents}{: LLM Orchestration, Agentic Tool-Calling, RAG Pipelines, LangChain, LangGraph, Prompt Engineering, OpenAI SDK, Azure OpenAI, GCP/Vertex AI, Groq, On-Prem LLM Hosting} \\
+     \textbf{ML \& Computer Vision}{: PyTorch, TensorFlow, Transformers, YOLO, scikit-learn, Keras, OpenCV} \\
+     \textbf{Voice \& Speech AI}{: Groq Whisper STT, Azure Speech, Text-to-Speech, SeamlessM4T (Meta), Twilio Voice, Real-time Audio Pipelines} \\
+     \textbf{Data \& Retrieval}{: PostgreSQL, MySQL, SQL Server, MongoDB, Text-to-SQL, SQLAlchemy, Alembic Migrations} \\
+     \textbf{Full-Stack \& DevOps}{: FastAPI, React, TypeScript, Docker, JWT Auth, CI/CD (pytest/vitest), Vercel, Git} \\
+     \textbf{Leadership \& Practice}{: Team Leadership, System Architecture, Security Engineering, Mentorship, Test-Driven Development}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
