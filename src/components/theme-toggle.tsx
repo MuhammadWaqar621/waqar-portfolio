@@ -10,6 +10,15 @@ function getSystemTheme(): Theme {
     : "light";
 }
 
+function getStored(): Theme | null {
+  try {
+    const stored = localStorage.getItem("theme");
+    return stored === "light" || stored === "dark" ? stored : null;
+  } catch {
+    return null;
+  }
+}
+
 function applyTheme(theme: Theme) {
   document.documentElement.setAttribute("data-theme", theme);
 }
@@ -18,15 +27,23 @@ export function ThemeToggle() {
   const [theme, setTheme] = useState<Theme | null>(null);
 
   useEffect(() => {
-    let stored: string | null = null;
-    try {
-      stored = localStorage.getItem("theme");
-    } catch {
-      stored = null;
-    }
-    const initial: Theme =
-      stored === "light" || stored === "dark" ? stored : getSystemTheme();
+    const stored = getStored();
+    const initial = stored ?? getSystemTheme();
     setTheme(initial);
+    applyTheme(initial);
+
+    if (stored) return;
+
+    // No explicit user choice yet: keep following the OS/browser theme live.
+    const mql = window.matchMedia("(prefers-color-scheme: dark)");
+    const handleChange = (e: MediaQueryListEvent) => {
+      if (getStored()) return; // user toggled manually since mount
+      const next: Theme = e.matches ? "dark" : "light";
+      setTheme(next);
+      applyTheme(next);
+    };
+    mql.addEventListener("change", handleChange);
+    return () => mql.removeEventListener("change", handleChange);
   }, []);
 
   function toggle() {
@@ -45,6 +62,7 @@ export function ThemeToggle() {
       type="button"
       onClick={toggle}
       aria-label="Toggle theme"
+      title={theme ? `Switch to ${theme === "dark" ? "light" : "dark"} theme` : "Toggle theme"}
       className="flex h-9 w-9 items-center justify-center rounded-full border border-border text-foreground transition-colors hover:border-accent hover:text-accent"
     >
       {theme === "dark" ? (
