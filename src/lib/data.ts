@@ -224,3 +224,26 @@ export const education = {
   degree: "B.Sc. in Computer Engineering",
   period: "Oct 2015 – Aug 2019",
 };
+
+export type Publication = {
+  title: string;
+  authors: string;
+  venue: string;
+  date: string;
+  doi: string;
+  url: string;
+  summary: string;
+};
+
+export const publications: Publication[] = [
+  {
+    title: "Meter Digit Recognition Via Faster R-CNN",
+    authors: "Muhammad Waqar, M. Waris, et al., M. Yousaf",
+    venue: "International Conference on Robotics and Automation in Industry (ICRAI)",
+    date: "Oct 2019",
+    doi: "10.1109/ICRAI47710.2019.8967357",
+    url: "https://www.semanticscholar.org/paper/e04f83359dc0ebe44c124146d2879853ab0666be",
+    summary:
+      "Grew out of my final-year project — a Faster R-CNN approach for reading digits off electric meters that held up under bad lighting, perspective distortion, and blur, and stayed accurate across different meter scales.",
+  },
+];
