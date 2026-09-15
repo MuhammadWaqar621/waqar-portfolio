@@ -41,8 +41,8 @@ export function Contact() {
           <div>
             <SectionHeading eyebrow="Contact" title="Let's work together" />
             <p className="max-w-xl text-base leading-relaxed text-muted">
-              Always happy to talk generative AI, RAG, or agent systems —
-              whichever channel below is easiest for you.
+              Always happy to talk generative AI, RAG, or agent systems.
+              Whichever channel below works best for you.
             </p>
           </div>
 
