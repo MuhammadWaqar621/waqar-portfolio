@@ -2,7 +2,7 @@ import { Reveal } from "@/components/reveal";
 
 const stats = [
   { value: "7+", label: "Years in AI Engineering" },
-  { value: "9+", label: "AI Systems Shipped" },
+  { value: "12+", label: "AI Systems Shipped" },
   { value: "3", label: "AI Teams Led" },
   { value: "70%", label: "Manual Effort Cut via Automation" },
 ];

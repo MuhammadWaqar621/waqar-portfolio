@@ -8,15 +8,21 @@ export function Skills() {
       <Reveal>
         <SectionHeading eyebrow="Skills" title="Technologies I work with" />
 
-        <div className="grid gap-8 sm:grid-cols-2">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {skillGroups.map((group) => (
-            <div key={group.label}>
-              <h3 className="text-sm font-medium text-muted">{group.label}</h3>
-              <div className="mt-3 flex flex-wrap gap-2">
+            <div
+              key={group.label}
+              className="rounded-xl border border-border bg-surface p-5 transition-colors hover:border-accent/50"
+            >
+              <h3 className="flex items-center gap-2 text-sm font-medium">
+                <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                {group.label}
+              </h3>
+              <div className="mt-4 flex flex-wrap gap-2">
                 {group.items.map((item) => (
                   <span
                     key={item}
-                    className="rounded-full border border-border bg-surface px-3 py-1 text-sm transition-colors hover:border-accent/50 hover:text-accent"
+                    className="rounded-full border border-border bg-background px-3 py-1 text-xs text-muted transition-colors hover:border-accent/50 hover:text-accent"
                   >
                     {item}
                   </span>
