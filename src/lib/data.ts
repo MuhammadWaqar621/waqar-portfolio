@@ -43,8 +43,10 @@ export const skillGroups = [
   {
     label: "Voice & Speech AI",
     items: [
-      "Whisper STT",
+      "Groq Whisper STT",
+      "Azure Speech",
       "Text-to-Speech",
+      "SeamlessM4T (Meta)",
       "Twilio Voice",
       "Real-time Audio Pipelines",
     ],
