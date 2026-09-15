@@ -157,6 +157,7 @@ export type Project = {
 export const projects: Project[] = [
   {
     name: "Enterprise Compliance AI Agent Platform",
+    url: "https://yanipro.ai/",
     period: "Sep 2026",
     stack: ["Agentic AI", "LangGraph", "Risk & Control Automation", "SAMA / ISO / BCM"],
     description:
@@ -164,7 +165,7 @@ export const projects: Project[] = [
   },
   {
     name: "ActPilot — AI Browser Agent",
-    period: "Sep 2026",
+    period: "Aug 2026",
     stack: ["Chrome Extension (MV3)", "Azure OpenAI (Vision)", "Groq Fallback", "FastAPI"],
     url: "https://github.com/MuhammadWaqar621/actpilot",
     description:
@@ -173,7 +174,7 @@ export const projects: Project[] = [
   {
     name: "Private Data Assistant — Text-to-SQL over Live Databases",
     url: "https://github.com/MuhammadWaqar621/private-data-assistant",
-    period: "Jun 2026",
+    period: "Apr 2026",
     stack: ["Text-to-SQL", "Multi-DB Adapters", "Read-only SQL Guard", "Fernet Encryption"],
     description:
       "Lets you ask your own database questions in plain English. Works with Postgres, MySQL, SQL Server, SQLite, or MongoDB. It figures out which tables matter, writes the query, runs it, and can chart the result. The part I spent the most time on was making sure it can only ever read: five separate layers of guardrails (blocked keywords, forced rollbacks, timeouts, row caps) stop it from writing anything.",
@@ -181,7 +182,7 @@ export const projects: Project[] = [
   {
     name: "Private Document Assistant — Agentic RAG Chatbot",
     url: "https://github.com/MuhammadWaqar621/private-document-assistant",
-    period: "Mar 2026",
+    period: "Jan 2026",
     stack: ["Agentic RAG", "Azure OpenAI", "SSE Streaming", "Multi-tenant Isolation"],
     description:
       "A private chatbot for your own documents, including PDFs, DOCX, and even scanned images via OCR. Every user and every chat is fully isolated from the others. The model decides for itself whether it needs to dig through your documents, so it doesn't awkwardly refuse to just say hi back. Answers stream in as they're generated.",
@@ -189,7 +190,7 @@ export const projects: Project[] = [
   {
     name: "Private Voice Assistant — Real-time AI Phone Helpline",
     url: "https://github.com/MuhammadWaqar621/private-voice-assistant",
-    period: "Dec 2025",
+    period: "Aug 2025",
     stack: ["Twilio Voice", "Whisper STT", "Orpheus TTS", "Real-time Voice AI"],
     description:
       "An AI phone helpline you can set up for any business on the fly. It works over a real phone call through Twilio or a hold-to-talk demo in the browser, with the same pipeline underneath (Groq for speech-to-text, the LLM, then text-to-speech). I got the round trip down to 2–2.7 seconds by warming up connections ahead of time and caching greetings. It also picks up the caller's language from their speech and responds in kind.",

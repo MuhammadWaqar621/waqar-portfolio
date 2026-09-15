@@ -43,10 +43,19 @@ export function Projects() {
                 </div>
                 <div className="mt-4 flex items-center gap-1.5 text-xs text-muted">
                   {project.url ? (
-                    <>
-                      <GithubIcon className="h-3.5 w-3.5" />
-                      <span className="group-hover:text-accent">View code on GitHub</span>
-                    </>
+                    project.url.includes("github.com") ? (
+                      <>
+                        <GithubIcon className="h-3.5 w-3.5" />
+                        <span className="group-hover:text-accent">View code on GitHub</span>
+                      </>
+                    ) : (
+                      <>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.8} className="h-3.5 w-3.5">
+                          <path d="M14 4h6v6M20 4 10 14M6 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-1" />
+                        </svg>
+                        <span className="group-hover:text-accent">Visit live site</span>
+                      </>
+                    )
                   ) : (
                     <span>Private project</span>
                   )}
