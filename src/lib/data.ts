@@ -8,7 +8,7 @@ export const profile = {
   github: "https://github.com/MuhammadWaqar621",
   linkedin: "https://www.linkedin.com/in/muhammad-waqar-1a594411a/",
   whatsapp: "https://wa.me/923086715563",
-  bio: "AI Lead Engineer with 7+ years building production AI systems — from agentic RAG pipelines and multi-agent orchestration to computer vision and NLP at scale. Currently leading generative AI and compliance-automation platforms at Softoo, after leading ML teams at Forbmax and Horizon Tech Services. Specialized in hybrid local/cloud LLM architectures (Llama, DeepSeek, Azure OpenAI) for secure, cost-efficient enterprise deployment.",
+  bio: "I've spent the last 7+ years building AI systems that actually make it to production — RAG pipelines, multi-agent workflows, computer vision, you name it. Right now I lead the generative AI and compliance-automation work at Softoo, after running ML teams at Forbmax and Horizon Tech Services before that. I mix local and cloud LLMs (Llama, DeepSeek, Azure OpenAI) depending on what a project actually needs — usually it comes down to keeping data private without blowing up the inference bill.",
 };
 
 export const skillGroups = [
@@ -103,11 +103,11 @@ export const experience: Experience[] = [
     period: "May 2025 – Present",
     location: "Islamabad, Pakistan",
     bullets: [
-      "Leading agentic AI and RAG pipeline development for intelligent enterprise automation and decision-making platforms.",
-      "Architecting multi-agent frameworks with autonomous reasoning for complex task orchestration.",
-      "Designing RAG architectures with semantic search and knowledge retrieval pipelines for enterprise knowledge management.",
-      "Deploying local LLMs (SQLCoder, Llama, Code Llama) for secure, on-premise AI with reduced inference cost.",
-      "Building AI-powered audit systems for automated compliance checking and risk assessment.",
+      "Lead the agentic AI and RAG work here — mostly enterprise automation and decision-support platforms.",
+      "Built multi-agent frameworks that can reason through multi-step tasks instead of following a fixed script.",
+      "Set up RAG pipelines with semantic search so the knowledge base actually answers questions instead of just storing documents.",
+      "Run SQLCoder, Llama, and Code Llama on-premise for clients who can't send data off-site — cuts our inference costs a lot too.",
+      "Built the AI audit platform that plans and runs compliance work (BCM, SAMA, ISO) end to end, including risk/control generation and reporting.",
     ],
   },
   {
@@ -116,11 +116,11 @@ export const experience: Experience[] = [
     period: "May 2023 – May 2025",
     location: "Islamabad, Pakistan",
     bullets: [
-      "Led a team of ML professionals across multiple AI domains, driving strategic and technical direction.",
-      "Built end-to-end model pipelines, improving operational efficiency by 40% through automated workflows.",
-      "Fine-tuned transformer, YOLO, and vision-transformer models for domain-specific performance gains.",
-      "Automated annotation with active-learning systems, cutting manual labeling effort by 70%.",
-      "Championed API and microservices architecture for scalable AI product integration.",
+      "Led a small team covering computer vision, NLP, and general ML — set direction and did a lot of the architecture myself.",
+      "Rebuilt our model pipelines end to end, which cut about 40% off the time from raw data to a deployed model.",
+      "Fine-tuned transformers, YOLO, and vision transformers for whatever the client's data actually looked like — it rarely worked out of the box.",
+      "Built an active-learning annotation loop that cut manual labeling work by roughly 70%.",
+      "Pushed for proper APIs and microservices instead of one-off scripts, so models could actually plug into other products.",
     ],
   },
   {
@@ -129,9 +129,9 @@ export const experience: Experience[] = [
     period: "Jun 2020 – Apr 2023",
     location: "Islamabad, Pakistan",
     bullets: [
-      "Led end-to-end ML projects, mentoring a team through data creation, training, and deployment.",
-      "Designed data preprocessing pipelines optimizing feature extraction and augmentation.",
-      "Focused fine-tuning efforts on object detection, improving recognition and tracking accuracy.",
+      "Owned ML projects start to finish and mentored a small team through data collection, training, and deployment.",
+      "Built preprocessing pipelines that made feature extraction and augmentation a lot less manual.",
+      "Spent a good chunk of time on object detection fine-tuning — better recognition and tracking accuracy.",
     ],
   },
   {
@@ -140,8 +140,8 @@ export const experience: Experience[] = [
     period: "Aug 2019 – May 2020",
     location: "Lahore, Pakistan",
     bullets: [
-      "Contributed to software components with a focus on verification and high-level design.",
-      "Built automated verification scripts to streamline testing and validation.",
+      "Worked on software components early in my career, mostly around verification and design.",
+      "Wrote automated verification scripts so testing didn't have to be done by hand every time.",
     ],
   },
 ];
@@ -159,63 +159,63 @@ export const projects: Project[] = [
     period: "Sep 2026",
     stack: ["Agentic AI", "LangGraph", "Risk & Control Automation", "SAMA / ISO / BCM"],
     description:
-      "Multi-agent AI audit platform spanning compliance domains including BCM, SAMA, and ISO standards, with automated maturity assessments. Plans and runs full audit engagements end-to-end — generating risk and control matrices, executing control tests, and producing audit reports — backed by a production-grade RAG pipeline, hybrid local/cloud LLMs, and full decision traceability for auditors.",
+      "An AI audit platform covering BCM, SAMA, and ISO compliance work, including maturity assessments. It plans and runs the whole audit — generates the risk and control matrix, runs the actual control tests, and writes the report — using a mix of local and cloud LLMs so auditors can trace every decision back to where it came from.",
   },
   {
     name: "Private Data Assistant — Text-to-SQL over Live Databases",
     period: "Jun 2026",
     stack: ["Text-to-SQL", "Multi-DB Adapters", "Read-only SQL Guard", "Fernet Encryption"],
     description:
-      "Natural-language querying over a user's own live database (Postgres, MySQL, SQL Server, SQLite, or MongoDB) — retrieves relevant tables via schema-aware RAG, generates the query, and answers with an optional chart. A five-layer, per-engine read-only guard (keyword blocking, forced rollback, timeouts, row caps) keeps execution safe.",
+      "Lets you ask your own database questions in plain English — works with Postgres, MySQL, SQL Server, SQLite, or MongoDB. It figures out which tables matter, writes the query, runs it, and can chart the result. The part I spent the most time on was making sure it can only ever read: five separate layers of guardrails (blocked keywords, forced rollbacks, timeouts, row caps) stop it from writing anything.",
   },
   {
     name: "Private Document Assistant — Agentic RAG Chatbot",
     period: "Mar 2026",
     stack: ["Agentic RAG", "Azure OpenAI", "SSE Streaming", "Multi-tenant Isolation"],
     description:
-      "Private RAG chatbot over a user's own documents (PDF/DOCX/scanned images with OCR fallback), with strict per-user and per-chat data isolation. The model decides per-turn whether to call a retrieval tool rather than always grounding, avoiding spurious refusals on plain greetings; responses stream via SSE.",
+      "A private chatbot for your own documents — PDFs, DOCX, even scanned images via OCR. Every user and every chat is fully isolated from the others. The model decides for itself whether it needs to go dig through your documents, so it doesn't awkwardly refuse to just say hi back. Answers stream in as they're generated.",
   },
   {
     name: "Private Voice Assistant — Real-time AI Phone Helpline",
     period: "Dec 2025",
     stack: ["Twilio Voice", "Whisper STT", "Orpheus TTS", "Real-time Voice AI"],
     description:
-      "Runtime-configurable AI voice helpline reachable by phone (Twilio) or browser hold-to-talk demo, sharing one Groq-powered STT → LLM → TTS pipeline. Tuned to a 2–2.7s full turn latency via connection warm-up and cached greetings, with caller language auto-detected from speech to adapt responses.",
+      "An AI phone helpline you can set up for any business on the fly — works over a real phone call through Twilio or a hold-to-talk demo in the browser, same pipeline underneath (Groq for speech-to-text, the LLM, then text-to-speech). Got the round trip down to 2–2.7 seconds by warming up connections ahead of time and caching greetings. It also picks up the caller's language from their speech and responds in kind.",
   },
   {
     name: "WellB — AI-Powered Hotel Management System",
     period: "Feb 2025",
     stack: ["RAG", "Llama", "OpenAI"],
     description:
-      "AI chatbot combining local Llama/DeepSeek models with OpenAI GPT for natural-language booking management, emergency alerts with priority classification, and AI-driven contact management.",
+      "A hotel management chatbot that mixes local Llama/DeepSeek models with OpenAI's GPT — handles booking changes in plain language, flags emergencies by priority, and manages contacts automatically.",
   },
   {
     name: "IntelliReport — AI-Powered Report Generation",
     period: "Sep 2024",
     stack: ["BERT", "Text Summarization", "Topic Extraction", "FastAPI"],
     description:
-      "BERT-based topic extraction and extractive/abstractive summarization system with topic-wise summaries, smart highlighting, and a scalable API supporting batch processing.",
+      "Takes long reports, pulls out the topics, and summarizes each one separately using BERT plus a mix of extractive and abstractive techniques. It also highlights the important parts on its own. Built as an API so it can chew through documents in batches.",
   },
   {
     name: "Smart Media Monitoring Application",
     period: "Aug 2023",
     stack: ["Speech-to-Text", "Facial Recognition", "Multi-language OCR"],
     description:
-      "Multi-model media monitoring pipeline covering speech-to-text, sentiment analysis, summarization, topic modeling, facial recognition, and multi-language OCR for Urdu, English, and Arabic.",
+      "A media monitoring pipeline that transcribes speech, reads sentiment, summarizes content, models topics, recognizes faces, and does OCR across Urdu, English, and Arabic — all pulled together as one system instead of a bunch of separate tools.",
   },
   {
     name: "Smart Surveillance System",
     period: "Dec 2022",
     stack: ["Object Detection", "ANPR", "Geofencing"],
     description:
-      "Real-time security monitoring across live and IP camera streams — object detection, ANPR, geofencing, and video summarization for efficient footage review.",
+      "Real-time monitoring across live and IP camera feeds — object detection, number-plate recognition, geofencing, and video summarization so reviewing footage doesn't eat up your whole day.",
   },
   {
     name: "AAQAB — Satellite Imagery Intelligence",
     period: "Feb 2022",
     stack: ["YOLO", "SAHI", "Distributed GPU Processing"],
     description:
-      "YOLO/ResNet-based object detection pipeline for high-resolution satellite imagery, with distributed large-image processing and automated PRSS analysis workflows.",
+      "Object detection over high-resolution satellite imagery using YOLO and ResNet. Had to split the images across GPUs just to make it tractable, and automated the whole PRSS analysis workflow on top of that.",
   },
 ];
 
