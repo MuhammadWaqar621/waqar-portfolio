@@ -7,6 +7,8 @@
 
 \documentclass[letterpaper,11pt]{article}
 
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
@@ -53,28 +55,29 @@
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{#1}~ & #2 \\
+      \textit{\small#3}~ & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
+      \textit{\small#1}~ & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+      \small#1~ & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemi{-}
+\renewcommand\labelitemii{-}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
@@ -89,17 +92,17 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Muhammad Waqar} \\ \vspace{1pt}
-    \small +923086715563 $|$ \href{mailto:waqarsahi621@gmail.com}{\underline{waqarsahi621@gmail.com}} $|$
-    \href{https://www.linkedin.com/in/muhammad-waqar-1a594411a/}{\underline{linkedin.com/in/muhammad-waqar-1a594411a}} $|$
-    \href{https://github.com/MuhammadWaqar621}{\underline{github.com/MuhammadWaqar621}} $|$
-    \href{https://muhammadwaqar-ai.vercel.app}{\underline{muhammadwaqar-ai.vercel.app}} $|$ Islamabad, Pakistan
+    \small +923086715563 | \href{mailto:waqarsahi621@gmail.com}{\underline{waqarsahi621@gmail.com}} |
+    \href{https://www.linkedin.com/in/muhammad-waqar-1a594411a/}{\underline{linkedin.com/in/muhammad-waqar-1a594411a}} |
+    \href{https://github.com/MuhammadWaqar621}{\underline{github.com/MuhammadWaqar621}} |
+    \href{https://muhammadwaqar-ai.vercel.app}{\underline{muhammadwaqar-ai.vercel.app}} | Islamabad, Pakistan
 \end{center}
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Engineering and Technology (UET)}{Oct. 2015 -- Aug. 2019}
+      {University of Engineering and Technology (UET)}{Oct. 2015 - Aug. 2019}
       {Bachelor of Science in Computer Engineering}{Taxila, Punjab}
   \resumeSubHeadingListEnd
 
@@ -108,7 +111,7 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Softoo}{May 2025 -- Present}
+      {Softoo}{May 2025 - Present}
       {AI Lead Engineer: Generative AI | RAG Systems | AI Agents}{Islamabad, Punjab}
       \resumeItemListStart
         \resumeItem{Leading AI agentic systems development and RAG (Retrieval-Augmented Generation) pipeline implementation for intelligent enterprise automation and decision-making platforms.}
@@ -120,7 +123,7 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Forbmax (pvt) Ltd}{May 2023 -- May 2025}
+      {Forbmax (pvt) Ltd}{May 2023 - May 2025}
       {AI Team Lead: Computer Vision | NLP | Data Science}{Islamabad, Punjab}
       \resumeItemListStart
         \resumeItem{Led a team of machine learning professionals, providing strategic guidance and technical mentorship to drive innovative solutions and collaborative efforts across multiple AI domains.}
@@ -134,7 +137,7 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Horizon Tech Services}{Jun. 2020 -- April 2023}
+      {Horizon Tech Services}{Jun. 2020 - April 2023}
       {Sr.AI Engineer}{Islamabad, Punjab}
       \resumeItemListStart
         \resumeItem{Served as a Senior AI Engineer, responsible for leading end-to-end machine learning projects while providing strategic guidance and mentorship to a dedicated team of professionals.}
@@ -146,7 +149,7 @@
       \resumeItemListEnd
 
     \resumeSubheading
-      {Lampro Mellon IT Solutions Pvt. Ltd}{Aug. 2019 -- May 2020}
+      {Lampro Mellon IT Solutions Pvt. Ltd}{Aug. 2019 - May 2020}
       {Python Developer}{Lahore, Punjab}
       \resumeItemListStart
         \resumeItem{Worked as a Junior Python Developer, contributing to the development of software components with a focus on verification and high-level programming design.}
@@ -164,7 +167,7 @@
     \resumeSubHeadingListStart
 
       \resumeProjectHeading
-          {\textbf{Enterprise Compliance AI Agent Platform} $|$ \emph{Agentic AI, RAG, LangGraph}}{Sep 2026}
+          {\textbf{Enterprise Compliance AI Agent Platform} | \emph{Agentic AI, RAG, LangGraph}}{Sep 2026}
           \resumeItemListStart
             \resumeItem{Designed and implemented an agentic AI audit platform covering BCM, SAMA, and ISO compliance domains, including automated maturity assessments across policies, contracts, and internal documentation.}
             \resumeItem{Built an end-to-end audit workflow that plans engagements, generates risk and control matrices, executes control tests, and produces audit-ready reports, orchestrated with LangGraph and LangChain.}
@@ -174,7 +177,7 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{ActPilot -- AI Browser Agent} $|$ \emph{Chrome Extension, Azure OpenAI, Groq}}{Aug 2026}
+          {\textbf{ActPilot - AI Browser Agent} | \emph{Chrome Extension, Azure OpenAI, Groq}}{Aug 2026}
           \resumeItemListStart
             \resumeItem{Built a Chrome/Edge browser extension (Manifest V3) that reads a page's visible text and a screenshot, then executes real actions on the page (fill fields, click, open links) based on natural-language requests.}
             \resumeItem{Designed the backend to return one structured JSON response per request, restricting execution to a closed set of actions referencing only elements the model was actually given, preventing hallucinated targets.}
@@ -184,7 +187,7 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Private Data Assistant} $|$ \emph{Text-to-SQL, Multi-DB, Read-only Guard}}{Apr 2026}
+          {\textbf{Private Data Assistant} | \emph{Text-to-SQL, Multi-DB, Read-only Guard}}{Apr 2026}
           \resumeItemListStart
             \resumeItem{Built a text-to-SQL/NoSQL assistant that connects to a user's own live database (PostgreSQL, MySQL, SQL Server, SQLite, or MongoDB) and answers natural-language questions with auto-generated queries.}
             \resumeItem{Implemented schema-aware RAG to retrieve the relevant tables for each question, with few-shot examples seeded from foreign-key relationships and successful past queries.}
@@ -194,7 +197,7 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Private Document Assistant} $|$ \emph{Agentic RAG, Azure OpenAI, SSE}}{Jan 2026}
+          {\textbf{Private Document Assistant} | \emph{Agentic RAG, Azure OpenAI, SSE}}{Jan 2026}
           \resumeItemListStart
             \resumeItem{Built a private RAG chatbot for a user's own documents (PDF/DOCX/scanned images with OCR fallback), with strict per-user and per-chat data isolation enforced at the vector-store layer.}
             \resumeItem{Implemented an agentic tool-calling loop where the model decides per turn whether to retrieve from documents, avoiding spurious grounded-refusals on plain conversational messages.}
@@ -203,16 +206,16 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Private Voice Assistant} $|$ \emph{Twilio, Whisper STT, Orpheus TTS}}{Aug 2025}
+          {\textbf{Private Voice Assistant} | \emph{Twilio, Whisper STT, Orpheus TTS}}{Aug 2025}
           \resumeItemListStart
             \resumeItem{Built a runtime-configurable AI voice helpline usable by any business, reachable via real phone calls (Twilio) or a browser hold-to-talk demo, sharing one Groq-powered pipeline.}
-            \resumeItem{Tuned the full conversational turn (speech-to-text, LLM, text-to-speech) down to a 2--2.7 second latency through connection warm-up and cached greetings.}
+            \resumeItem{Tuned the full conversational turn (speech-to-text, LLM, text-to-speech) down to a 2-2.7 second latency through connection warm-up and cached greetings.}
             \resumeItem{Implemented automatic caller language detection from speech, adapting the assistant's spoken replies accordingly.}
             \resumeItem{Designed the Twilio integration around HTTP-based polling rather than WebSocket media streams specifically so the service could run on serverless infrastructure.}
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{WellB - AI-Powered Hotel Management System} $|$ \emph{RAG, Llama, OpenAI}}{Feb. 2025}
+          {\textbf{WellB - AI-Powered Hotel Management System} | \emph{RAG, Llama, OpenAI}}{Feb. 2025}
           \resumeItemListStart
             \resumeItem{Developed comprehensive AI chatbot ``WellB'' using RAG pipeline with local deployment of Llama and DeepSeek models, integrated with OpenAI GPT for enhanced conversational capabilities.}
             \resumeItem{Implemented intelligent hotel booking system with multi-model AI approach, enabling natural language booking management through locally deployed and cloud-based LLMs.}
@@ -223,7 +226,7 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{IntelliReport - AI-Powered Report Generation} $|$ \emph{Python, NLP, Transformers, FastAPI}}{Sep. 2024}
+          {\textbf{IntelliReport - AI-Powered Report Generation} | \emph{Python, NLP, Transformers, FastAPI}}{Sep. 2024}
           \resumeItemListStart
             \resumeItem{Developed comprehensive AI-powered report generation system with automated text correction, topic extraction, and intelligent summarization capabilities using transformer-based models and BERT architectures.}
             \resumeItem{Implemented advanced topic extraction engine utilizing BERT and custom NLP models to automatically identify and categorize key themes, subjects, and concepts from unstructured text data with hierarchical clustering.}
@@ -234,7 +237,7 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Smart Media Monitoring Application} $|$ \emph{Python, PyTorch}}{August 2023}
+          {\textbf{Smart Media Monitoring Application} | \emph{Python, PyTorch}}{August 2023}
           \resumeItemListStart
             \resumeItem{Led a comprehensive media monitoring project, involving the development and deployment of multiple AI models, including Speech to Text conversion, sentiment analysis, summary generation, topic modeling, facial recognition, and OCR.}
             \resumeItem{Worked with both Urdu and English datasets to ensure language versatility and provide valuable insights for the application's users.}
@@ -244,7 +247,7 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Smart Surveillance System} $|$ \emph{Python, PyTorch and TensorFlow}}{December 2022}
+          {\textbf{Smart Surveillance System} | \emph{Python, PyTorch and TensorFlow}}{December 2022}
           \resumeItemListStart
             \resumeItem{Led the Smart Surveillance project focused on live camera streams and IP cameras, specializing in AI modules for comprehensive security monitoring.}
             \resumeItem{Live Object Detection: Implemented real-time object detection models for enhanced security and tracking with high accuracy and low latency performance.}
@@ -254,7 +257,7 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{AAQAB Project} $|$ \emph{Python, Yolo, PyTorch}}{Feb. 2022}
+          {\textbf{AAQAB Project} | \emph{Python, Yolo, PyTorch}}{Feb. 2022}
           \resumeItemListStart
             \resumeItem{Led the AAQAB Project, utilizing YOLO (You Only Look Once) and ResNet for object detection in large images with focus on satellite imagery analysis and geospatial intelligence applications.}
             \resumeItem{Large Image Processing: Worked on processing large images and splitting them based on latitude and longitude coordinates for efficient computational handling and distributed processing across multiple GPU clusters.}
@@ -267,7 +270,7 @@
 %-----------PUBLICATIONS-----------
 \section{Publications}
   \resumeSubHeadingListStart
-    \resumeSubItem{\textbf{Meter Digit Recognition Via Faster R-CNN} -- Muhammad Waqar, M. Waris, et al., M. Yousaf. \emph{International Conference on Robotics and Automation in Industry (ICRAI)}, Oct 2019. DOI: 10.1109/ICRAI47710.2019.8967357.}
+    \resumeSubItem{\textbf{Meter Digit Recognition Via Faster R-CNN} - Muhammad Waqar, M. Waris, et al., M. Yousaf. \emph{International Conference on Robotics and Automation in Industry (ICRAI)}, Oct 2019. DOI: 10.1109/ICRAI47710.2019.8967357.}
   \resumeSubHeadingListEnd
 
 %-----------PROGRAMMING SKILLS-----------
