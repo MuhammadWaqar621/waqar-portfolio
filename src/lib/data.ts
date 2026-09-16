@@ -25,6 +25,7 @@ export const skillGroups = [
       "Azure OpenAI",
       "GCP / Vertex AI",
       "Groq",
+      "Open-Source LLMs (Llama, Mistral, DeepSeek)",
       "On-Prem LLM Hosting",
     ],
   },
