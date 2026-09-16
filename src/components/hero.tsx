@@ -27,10 +27,16 @@ export function Hero() {
 
       <div className="relative mx-auto flex max-w-5xl flex-col-reverse items-start gap-10 px-6 pt-16 pb-20 sm:pt-24 sm:pb-28 md:flex-row md:items-center md:justify-between">
         <div className="max-w-2xl">
-          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-3 py-1 text-xs font-medium text-muted backdrop-blur">
-            <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
-            Currently AI Lead Engineer @ Softoo
-          </span>
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-3 py-1 text-xs font-medium text-muted backdrop-blur">
+              <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
+              Currently AI Lead Engineer @ Softoo
+            </span>
+            <span className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/80 px-3 py-1 text-xs font-medium text-muted backdrop-blur">
+              <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+              {profile.relocation}
+            </span>
+          </div>
 
           <h1 className="mt-5 text-4xl font-semibold tracking-tight sm:text-6xl">
             {profile.name}
