@@ -41,13 +41,13 @@ export function Projects() {
                 ))}
               </div>
 
-              <div className="mt-4 flex flex-wrap items-center gap-4 text-xs">
+              <div className="mt-5 flex flex-wrap items-center gap-2 text-xs">
                 {project.liveUrl && (
                   <a
                     href={project.liveUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-1.5 text-muted transition-colors hover:text-accent"
+                    className="flex items-center gap-1.5 rounded-full bg-accent px-3 py-1.5 font-medium text-accent-foreground transition-transform hover:-translate-y-0.5 hover:opacity-90"
                   >
                     <ExternalLinkIcon className="h-3.5 w-3.5" />
                     {project.liveLabel ?? "Live demo"}
@@ -58,14 +58,16 @@ export function Projects() {
                     href={project.repoUrl}
                     target="_blank"
                     rel="noreferrer"
-                    className="flex items-center gap-1.5 text-muted transition-colors hover:text-accent"
+                    className="flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
                   >
                     <GithubIcon className="h-3.5 w-3.5" />
                     View code
                   </a>
                 )}
                 {!project.repoUrl && !project.liveUrl && (
-                  <span className="text-muted">Private project</span>
+                  <span className="rounded-full border border-border px-3 py-1.5 text-muted">
+                    Private project
+                  </span>
                 )}
               </div>
             </article>
