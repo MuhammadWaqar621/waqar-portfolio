@@ -158,6 +158,7 @@ export type Project = {
   description: string;
   repoUrl?: string;
   liveUrl?: string;
+  liveLabel?: string;
 };
 
 export const projects: Project[] = [
@@ -174,7 +175,8 @@ export const projects: Project[] = [
     period: "Aug 2026",
     stack: ["Chrome Extension (MV3)", "Azure OpenAI (Vision)", "Groq Fallback", "FastAPI"],
     repoUrl: "https://github.com/MuhammadWaqar621/actpilot",
-    liveUrl: "https://actpilot-ai.vercel.app/docs",
+    liveUrl: "https://microsoftedge.microsoft.com/addons/detail/actpilot/kbaigcjodbggmfampikpgmopjojkomid",
+    liveLabel: "Get the extension",
     description:
       "A browser extension that actually acts on the page for you. It reads the visible text, grabs a screenshot, and can fill fields, click buttons, or open links based on what you ask, then it can chart data it finds or export the whole conversation as a PDF. Runs on Azure OpenAI's vision model with an automatic fallback to Groq if Azure gets rate-limited. I built in a hard safety rule too: it'll fill out a form, but it won't hit submit, pay, delete, or send anything unless I explicitly tell it to.",
   },

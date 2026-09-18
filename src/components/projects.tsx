@@ -50,7 +50,7 @@ export function Projects() {
                     className="flex items-center gap-1.5 text-muted transition-colors hover:text-accent"
                   >
                     <ExternalLinkIcon className="h-3.5 w-3.5" />
-                    Live demo
+                    {project.liveLabel ?? "Live demo"}
                   </a>
                 )}
                 {project.repoUrl && (
