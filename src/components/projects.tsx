@@ -21,8 +21,8 @@ export function Projects() {
       <div className="grid gap-6 sm:grid-cols-2">
         {projects.map((project, i) => (
           <Reveal key={project.name} className={i % 2 === 1 ? "sm:!delay-100" : ""}>
-            <article className="group relative flex h-full flex-col overflow-hidden rounded-xl border border-border bg-surface p-6 transition-all hover:-translate-y-1 hover:border-accent/50 hover:shadow-xl hover:shadow-accent-soft">
-              <span className="absolute inset-x-0 top-0 h-0.5 origin-left scale-x-0 bg-gradient-to-r from-accent to-accent-2 transition-transform duration-300 group-hover:scale-x-100" />
+            <article className="relative flex h-full flex-col overflow-hidden rounded-xl border border-border bg-surface p-6">
+              <span className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-accent to-accent-2" />
               <div className="flex items-start justify-between gap-4">
                 <h3 className="font-medium leading-snug">{project.name}</h3>
                 <span className="shrink-0 text-xs text-muted">{project.period}</span>
