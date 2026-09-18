@@ -2,6 +2,7 @@ import { projects } from "@/lib/data";
 import { SectionHeading } from "@/components/section-heading";
 import { Reveal } from "@/components/reveal";
 import { GithubIcon } from "@/components/icons";
+import { LinkPreview } from "@/components/link-preview";
 
 function ExternalLinkIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -43,26 +44,30 @@ export function Projects() {
 
               <div className="mt-5 flex flex-wrap items-center gap-2 text-xs">
                 {project.liveUrl && (
-                  <a
-                    href={project.liveUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-1.5 rounded-full bg-accent px-3 py-1.5 font-medium text-accent-foreground transition-transform hover:-translate-y-0.5 hover:opacity-90"
-                  >
-                    <ExternalLinkIcon className="h-3.5 w-3.5" />
-                    {project.liveLabel ?? "Live demo"}
-                  </a>
+                  <LinkPreview href={project.liveUrl}>
+                    <a
+                      href={project.liveUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-1.5 rounded-full bg-gradient-to-r from-accent to-accent-2 px-3 py-1.5 font-medium text-accent-foreground transition-transform hover:-translate-y-0.5 hover:opacity-90"
+                    >
+                      <ExternalLinkIcon className="h-3.5 w-3.5" />
+                      {project.liveLabel ?? "Live demo"}
+                    </a>
+                  </LinkPreview>
                 )}
                 {project.repoUrl && (
-                  <a
-                    href={project.repoUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 font-medium text-foreground transition-colors hover:border-accent hover:text-accent"
-                  >
-                    <GithubIcon className="h-3.5 w-3.5" />
-                    View code
-                  </a>
+                  <LinkPreview href={project.repoUrl}>
+                    <a
+                      href={project.repoUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="hover-accent-border hover-accent-text flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 font-medium text-foreground transition-colors"
+                    >
+                      <GithubIcon className="h-3.5 w-3.5" />
+                      View code
+                    </a>
+                  </LinkPreview>
                 )}
                 {!project.repoUrl && !project.liveUrl && (
                   <span className="rounded-full border border-border px-3 py-1.5 text-muted">

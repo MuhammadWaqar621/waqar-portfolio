@@ -86,3 +86,14 @@ html {
 .animate-float-slow {
   animation: float-slow 7s ease-in-out infinite;
 }
+
+/* Hover-only-on-real-pointer utilities: avoids ":hover" sticking after a
+   tap on touchscreens/hybrid devices that still report hover support. */
+@media (hover: hover) and (pointer: fine) {
+  .hover-accent-border:hover {
+    border-color: var(--accent);
+  }
+  .hover-accent-text:hover {
+    color: var(--accent);
+  }
+}
