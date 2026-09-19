@@ -61,7 +61,7 @@ export function LinkPreview({
             className="pointer-events-none fixed z-50 -translate-x-1/2 -translate-y-full rounded-md border border-border bg-surface px-2 py-1 text-xs text-muted shadow-lg"
             style={{ left: pos.x, top: pos.y - 10 }}
           >
-            Opens {hostnameOf(href)} ↗
+            {hostnameOf(href)} ↗
           </span>,
           document.body
         )}
