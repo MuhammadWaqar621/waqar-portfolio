@@ -92,10 +92,9 @@
 %----------HEADING----------
 \begin{center}
     \textbf{\Huge \scshape Muhammad Waqar} \\ \vspace{1pt}
-    \small +923086715563 | \href{mailto:waqarsahi621@gmail.com}{\underline{waqarsahi621@gmail.com}} |
-    \href{https://www.linkedin.com/in/muhammadwaqar-ai/}{\underline{linkedin.com/in/muhammadwaqar-ai}} |
-    \href{https://github.com/MuhammadWaqar621}{\underline{github.com/MuhammadWaqar621}} |
-    \href{https://muhammadwaqar-ai.vercel.app}{\underline{muhammadwaqar-ai.vercel.app}} | Islamabad, Pakistan (Open to Relocation)
+    \small Islamabad, Pakistan | +92 308 6715563 | \href{mailto:waqarsahi621@gmail.com}{\underline{waqarsahi621@gmail.com}} \\ \vspace{2pt}
+    \href{https://www.linkedin.com/in/muhammadwaqar-ai/}{\underline{LinkedIn}} |
+    \href{https://muhammadwaqar-ai.vercel.app}{\underline{Portfolio}}
 \end{center}
 
 %-----------EDUCATION-----------
@@ -127,13 +126,11 @@
       {AI Team Lead: Computer Vision | NLP | Data Science}{Islamabad, Punjab}
       \resumeItemListStart
         \resumeItem{Led a team of machine learning professionals, providing strategic guidance and technical mentorship to drive innovative solutions and collaborative efforts across multiple AI domains.}
-        \resumeItem{Designed and developed advanced machine learning models for mission-critical applications, ensuring high performance and reliability with comprehensive testing and validation frameworks.}
         \resumeItem{Created and optimized end-to-end model pipelines, streamlining data preprocessing and model deployment processes, improving operational efficiency by 40\% through automated workflows.}
         \resumeItem{Implemented custom training frameworks and fine-tuning strategies for transformer models, YOLO architectures, and computer vision models to achieve domain-specific performance improvements.}
         \resumeItem{Spearheaded fine-tuning of large language models and vision transformers using transfer learning techniques, achieving significant accuracy improvements on specialized datasets and business-specific use cases.}
         \resumeItem{Automated the annotation process through development of intelligent labeling systems and active learning frameworks, reducing manual annotation effort by 70\% while maintaining data quality and consistency.}
         \resumeItem{Championed the design of robust APIs and microservices architecture, enhancing product accessibility and ensuring seamless integration with external systems and platforms for scalable AI solutions.}
-        \resumeItem{Managed the successful deployment of machine learning solutions in production environments, optimizing real-time processing capabilities and reducing operational costs through efficient resource utilization.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -142,10 +139,8 @@
       \resumeItemListStart
         \resumeItem{Served as a Senior AI Engineer, responsible for leading end-to-end machine learning projects while providing strategic guidance and mentorship to a dedicated team of professionals.}
         \resumeItem{Managed and supervised data creation, preprocessing, model training, and deployment for a variety of applications, ensuring data quality and model effectiveness.}
-        \resumeItem{Oversaw extensive data handling, including data collection, cleaning, and annotation, to support the development of high-performing machine learning models.}
         \resumeItem{Designed and implemented robust data preprocessing pipelines, optimizing feature extraction and data augmentation techniques for enhanced model performance.}
         \resumeItem{Led the fine-tuning and optimization of models, with a particular focus on object detection, resulting in improved object recognition and tracking.}
-        \resumeItem{Managed the deployment of machine learning solutions in production environments, collaborating cross-functionally to guarantee seamless integration and real-time processing.}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -153,10 +148,6 @@
       {Python Developer}{Lahore, Punjab}
       \resumeItemListStart
         \resumeItem{Worked as a Junior Python Developer, contributing to the development of software components with a focus on verification and high-level programming design.}
-        \resumeItem{Collaborated with experienced team members to design and implement software modules, ensuring they meet quality and reliability standards.}
-        \resumeItem{Assisted in the creation of automated verification scripts and tools to streamline the testing and validation processes.}
-        \resumeItem{Participated in code reviews to learn and improve software quality and coding practices.}
-        \resumeItem{Contributed to the design and architecture of software systems, applying theoretical knowledge gained during education.}
         \resumeItem{Worked on algorithm implementation and data processing, applying problem-solving skills to real-world challenges.}
       \resumeItemListEnd
 
@@ -187,22 +178,13 @@
           \resumeItemListEnd
 
       \resumeProjectHeading
-          {\textbf{Private Data Assistant} | \emph{Text-to-SQL, Multi-DB, Read-only Guard}}{Apr 2026}
+          {\textbf{Private Knowledge Assistant} | \emph{Agentic RAG, Text-to-SQL, Web RAG, Azure OpenAI}}{Jan 2026 -- Oct 2026}
           \resumeItemListStart
-            \resumeItem{Built a text-to-SQL/NoSQL assistant that connects to a user's own live database (PostgreSQL, MySQL, SQL Server, SQLite, or MongoDB) and answers natural-language questions with auto-generated queries.}
-            \resumeItem{Implemented schema-aware RAG to retrieve the relevant tables for each question, with few-shot examples seeded from foreign-key relationships and successful past queries.}
-            \resumeItem{Designed a five-layer, per-engine read-only execution guard (keyword blocking, forced rollback, statement timeouts, row caps) to guarantee the assistant can only ever read data.}
-            \resumeItem{Encrypted stored database credentials with Fernet symmetric encryption, so registered connections are never stored or used in plaintext.}
-            \resumeItem{Added optional chart generation for query results, rendered through a React/Chart.js frontend.}
-          \resumeItemListEnd
-
-      \resumeProjectHeading
-          {\textbf{Private Document Assistant} | \emph{Agentic RAG, Azure OpenAI, SSE}}{Jan 2026}
-          \resumeItemListStart
-            \resumeItem{Built a private RAG chatbot for a user's own documents (PDF/DOCX/scanned images with OCR fallback), with strict per-user and per-chat data isolation enforced at the vector-store layer.}
-            \resumeItem{Implemented an agentic tool-calling loop where the model decides per turn whether to retrieve from documents, avoiding spurious grounded-refusals on plain conversational messages.}
-            \resumeItem{Streamed responses token-by-token via Server-Sent Events for a responsive chat experience.}
-            \resumeItem{Used Azure OpenAI for embeddings with a configurable Groq/Azure chat backend, and JWT-based authentication for account and session security.}
+            \resumeItem{Built a private AI assistant that answers questions from a user's own documents, web pages and live databases in one conversation, with a tool-calling agent deciding per question whether to search documents, query a database, both, or simply reply.}
+            \resumeItem{Implemented document and web RAG over PDF, Word (DOCX), TXT, images (OCR fallback for scanned pages) and website URLs, with strict per-user and per-chat data isolation enforced at the vector-store layer.}
+            \resumeItem{Built text-to-SQL/NoSQL over PostgreSQL, MySQL, SQL Server, SQLite and MongoDB, using schema-aware RAG with few-shot examples seeded from foreign-key relationships and successful past queries.}
+            \resumeItem{Designed a five-layer, per-engine read-only execution guard (keyword blocking, forced rollback, statement timeouts, row caps) and Fernet-encrypted credentials, so connected databases can only ever be read.}
+            \resumeItem{Every answer cites its real source (document page, URL or executed query); responses stream via Server-Sent Events, query results render as charts, and accounts are secured with JWT authentication.}
           \resumeItemListEnd
 
       \resumeProjectHeading
@@ -222,16 +204,13 @@
             \resumeItem{Built emergency alert system with real-time notifications and intelligent priority classification using hybrid AI model architecture.}
             \resumeItem{Created AI-driven contact management with automated data extraction and contact addition using local Llama model deployment for data privacy.}
             \resumeItem{Developed booking edit functionality with conflict detection and automated rescheduling using DeepSeek model for complex reasoning tasks.}
-            \resumeItem{Integrated multiple AI services creating cohesive WellB platform with local and cloud-based model orchestration for optimal performance and cost efficiency.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{IntelliReport - AI-Powered Report Generation} | \emph{Python, NLP, Transformers, FastAPI}}{Sep. 2024}
           \resumeItemListStart
             \resumeItem{Developed comprehensive AI-powered report generation system with automated text correction, topic extraction, and intelligent summarization capabilities using transformer-based models and BERT architectures.}
-            \resumeItem{Implemented advanced topic extraction engine utilizing BERT and custom NLP models to automatically identify and categorize key themes, subjects, and concepts from unstructured text data with hierarchical clustering.}
             \resumeItem{Built intelligent summary generation system using extractive and abstractive summarization techniques to create concise, coherent summaries while preserving critical information and maintaining contextual coherence.}
-            \resumeItem{Created topic-wise summary functionality that segments documents by identified topics and generates targeted summaries for each category, enabling focused analysis and better content organization with semantic similarity scoring.}
             \resumeItem{Deployed multi-format report generation with markdown and HTML rendering for direct frontend display and PDF download functionality for seamless user experience across different platforms and devices.}
             \resumeItem{Built scalable API architecture supporting batch processing with real-time progress tracking and efficient memory management for large document handling and concurrent user requests with load balancing capabilities.}
           \resumeItemListEnd
@@ -243,7 +222,6 @@
             \resumeItem{Worked with both Urdu and English datasets to ensure language versatility and provide valuable insights for the application's users.}
             \resumeItem{Developed comprehensive text detection and OCR pipeline supporting multi-format document processing including PDFs, images, and tables with multi-language capabilities for Urdu, English, and Arabic text extraction.}
             \resumeItem{Pioneered facial recognition solutions to identify and track individuals in media content, providing valuable insights for security and analytics.}
-            \resumeItem{Integrated a YouTube Vlogger Scrapper, automating data extraction for content analysis and audience insights.}
           \resumeItemListEnd
 
       \resumeProjectHeading
@@ -253,7 +231,6 @@
             \resumeItem{Live Object Detection: Implemented real-time object detection models for enhanced security and tracking with high accuracy and low latency performance.}
             \resumeItem{ANPR (Automatic Number Plate Recognition): Developed a highly accurate ANPR system for vehicle monitoring and identification with multi-language support.}
             \resumeItem{Geofencing: Created geofencing algorithms to define and enforce geographic boundaries within the camera streams for automated area monitoring.}
-            \resumeItem{Video Summarization: Designed video summarization techniques to condense lengthy footage into concise and informative summaries for efficient review.}
           \resumeItemListEnd
 
       \resumeProjectHeading
@@ -262,7 +239,6 @@
             \resumeItem{Led the AAQAB Project, utilizing YOLO (You Only Look Once) and ResNet for object detection in large images with focus on satellite imagery analysis and geospatial intelligence applications.}
             \resumeItem{Large Image Processing: Worked on processing large images and splitting them based on latitude and longitude coordinates for efficient computational handling and distributed processing across multiple GPU clusters.}
             \resumeItem{Object Detection with SAHI: Implemented object detection algorithms with a focus on accurate object counting in high-resolution satellite imagery using sliding window approach for enhanced detection accuracy.}
-            \resumeItem{PRSS Image Pipeline: Developed a comprehensive pipeline for PRSS (Pakistan Remote Sensing Satellite) image analysis with automated processing workflows and quality assurance mechanisms for consistent results.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
