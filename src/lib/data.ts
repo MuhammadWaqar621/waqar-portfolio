@@ -174,7 +174,7 @@ export const projects: Project[] = [
   },
   {
     name: "ActPilot — AI Browser Agent",
-    period: "Aug 2026",
+    period: "Jul 2026",
     stack: ["Chrome Extension (MV3)", "Azure OpenAI (Vision)", "Groq Fallback", "FastAPI"],
     repoUrl: "https://github.com/MuhammadWaqar621/actpilot",
     liveUrl: "https://microsoftedge.microsoft.com/addons/detail/actpilot/kbaigcjodbggmfampikpgmopjojkomid",
@@ -186,7 +186,7 @@ export const projects: Project[] = [
     name: "Private Knowledge Assistant — AI over Documents, Websites & Databases",
     repoUrl: "https://github.com/MuhammadWaqar621/private-knowledge-assistant",
     liveUrl: "https://knowledgeassistant-ai.vercel.app",
-    period: "Jan – Oct 2026",
+    period: "Apr 2026",
     stack: ["Agentic RAG", "Text-to-SQL", "Web RAG", "Read-only SQL Guard", "Azure OpenAI"],
     description:
       "A private assistant that answers from your own documents (PDF, DOCX, TXT, scanned images), web pages and live databases (PostgreSQL, MySQL, SQL Server, SQLite, MongoDB) in the same chat. For each question, a tool-calling agent decides whether to search documents, query a database, do both, or just reply. Answers cite the exact source (page, URL or the SQL that ran), and query results can be shown as charts. Databases are strictly read-only, with five layers of checks (blocked keywords, forced rollback, timeouts, row limits) and encrypted credentials, and every user's data is kept separate.",
