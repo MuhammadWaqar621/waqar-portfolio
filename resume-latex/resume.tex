@@ -1,4 +1,4 @@
-%-------------------------
+﻿%-------------------------
 % Resume in Latex
 % Author : Jake Gutierrez
 % Based off of: https://github.com/sb2nov/resume
@@ -35,6 +35,7 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
+\linespread{1.24}
 
 \raggedbottom
 \raggedright
@@ -99,7 +100,7 @@
 
 %-----------SUMMARY-----------
 \section{Summary}
-\small{AI Lead Engineer with 7+ years of experience taking machine learning and generative AI systems from prototype to production. Currently leads agentic AI and RAG development at Softoo, including an LLM-driven audit platform for SAMA, ISO and BCM compliance. Hands-on with multi-agent orchestration (LangGraph, LangChain), RAG, text-to-SQL, and hybrid deployments that pair on-premise open-source LLMs with Azure OpenAI for data-sensitive clients. Previously led ML teams delivering computer vision and NLP systems, and published at IEEE ICRAI.}
+\small{AI engineer with 7+ years of building machine learning and generative AI systems that run in production. At Softoo I lead the agentic AI and RAG work, including an audit platform that automates SAMA, ISO and BCM compliance reviews. Most of my recent work is multi-agent workflows in LangGraph, RAG, text-to-SQL, and running open-source LLMs on-premise alongside Azure OpenAI for clients who can't send their data to the cloud. Before Softoo I led ML teams working on computer vision and NLP, and I have a paper published at IEEE ICRAI.}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -109,40 +110,40 @@
       {Softoo}{May 2025 -- Present}
       {AI Lead Engineer (Generative AI, RAG Systems, AI Agents)}{Islamabad, Pakistan}
       \resumeItemListStart
-        \resumeItem{Lead agentic AI and RAG development for enterprise automation and decision-support platforms, owning the architecture from design through production.}
-        \resumeItem{Architected multi-agent workflows with LangGraph and LangChain that plan and execute multi-step tasks through tool calling, replacing fixed, rule-based pipelines.}
-        \resumeItem{Built RAG pipelines with vector databases and semantic search that ground LLM answers in enterprise knowledge bases and cite their sources.}
-        \resumeItem{Deployed SQLCoder, Llama and Code Llama on-premise for clients whose data cannot leave their network, keeping data private and lowering inference cost compared with hosted APIs.}
-        \resumeItem{Led development of the AI audit platform for BCM, SAMA and ISO compliance (see Projects), covering risk and control generation, control testing and audit reporting.}
-        \resumeItem{Mentor junior engineers and set team practices for agent development and model governance in production.}
+        \resumeItem{Lead the technical side of our agentic AI and RAG products for enterprise automation, from architecture through to production releases.}
+        \resumeItem{Designed multi-agent workflows in LangGraph and LangChain where agents plan multi-step tasks and call tools, instead of following hard-coded rule pipelines.}
+        \resumeItem{Built RAG pipelines (vector database + semantic search) that answer from the client's own knowledge base and show the source behind each answer.}
+        \resumeItem{Run SQLCoder, Llama and Code Llama on-premise for clients whose data can't leave their network. This also brought inference costs down compared to paying for hosted APIs.}
+        \resumeItem{Led the build of our AI audit platform for BCM, SAMA and ISO (more under Projects): risk and control generation, control testing and the final audit report.}
+        \resumeItem{Mentor the junior engineers and set up how the team builds and governs agents in production.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Forbmax (Pvt) Ltd}{May 2023 -- May 2025}
       {AI Team Lead (Computer Vision, NLP, Data Science)}{Islamabad, Pakistan}
       \resumeItemListStart
-        \resumeItem{Led a team of machine learning engineers across computer vision, NLP and data science, setting technical direction and owning core system architecture.}
-        \resumeItem{Rebuilt end-to-end model pipelines (preprocessing, training, deployment) around automated workflows, improving operational efficiency by 40\%.}
-        \resumeItem{Fine-tuned transformer, YOLO and vision transformer models with transfer learning to reach target accuracy on client-specific datasets.}
-        \resumeItem{Built an active-learning annotation system that reduced manual labelling effort by 70\% while keeping label quality consistent.}
-        \resumeItem{Moved model delivery from one-off scripts to APIs and microservices, so models integrate cleanly with external products and platforms.}
+        \resumeItem{Led a team of ML engineers working across computer vision, NLP and data science. Set the technical direction and did most of the core architecture myself.}
+        \resumeItem{Rebuilt our model pipelines end to end (preprocessing, training, deployment) with automated workflows, which made the team about 40\% more efficient.}
+        \resumeItem{Fine-tuned transformers, YOLO and vision transformers on client data with transfer learning, since off-the-shelf models rarely reached the accuracy clients needed.}
+        \resumeItem{Built an active-learning annotation tool that cut manual labelling by 70\% without hurting label quality.}
+        \resumeItem{Pushed the team to ship models as APIs and microservices instead of one-off scripts, which made them much easier to plug into other products.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Horizon Tech Services}{Jun 2020 -- Apr 2023}
       {Senior AI Engineer}{Islamabad, Pakistan}
       \resumeItemListStart
-        \resumeItem{Owned ML projects end to end (data collection, preprocessing, training, deployment) and mentored a team of engineers through each stage.}
-        \resumeItem{Built preprocessing pipelines that automated feature extraction and data augmentation, improving model performance and cutting manual data work.}
-        \resumeItem{Led fine-tuning of object detection and tracking models for production applications, improving recognition and tracking accuracy.}
+        \resumeItem{Ran ML projects from data collection through to deployment and mentored the engineers on the team.}
+        \resumeItem{Built preprocessing pipelines that automated feature extraction and data augmentation, which improved model results and saved a lot of manual data work.}
+        \resumeItem{Spent much of my time fine-tuning object detection and tracking models for production use, improving recognition and tracking accuracy.}
       \resumeItemListEnd
 
     \resumeSubheading
       {Lampro Mellon IT Solutions (Pvt) Ltd}{Aug 2019 -- May 2020}
       {Python Developer}{Lahore, Pakistan}
       \resumeItemListStart
-        \resumeItem{Developed Python software components with a focus on verification and high-level design.}
-        \resumeItem{Implemented algorithms and data-processing modules, and wrote automated verification scripts to replace manual testing.}
+        \resumeItem{Wrote Python software components, mainly around verification and high-level design.}
+        \resumeItem{Implemented algorithms and data-processing modules, and wrote scripts to automate verification that was previously done by hand.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -154,84 +155,84 @@
       \resumeProjectHeading
           {\textbf{Enterprise Compliance AI Agent Platform (Softoo)} | \emph{Agentic AI, RAG, LangGraph}}{Sep 2026}
           \resumeItemListStart
-            \resumeItem{Led the design of an agentic AI audit platform for BCM, SAMA and ISO compliance, including automated maturity assessments across policies, contracts and internal documentation.}
-            \resumeItem{Built the end-to-end audit workflow with LangGraph and LangChain: engagement planning, risk and control matrix generation, control testing and audit-ready reports.}
-            \resumeItem{Built a RAG pipeline with vector stores and semantic search that grounds LLM outputs in enterprise documents, improving factual accuracy and traceability.}
-            \resumeItem{Combined self-hosted models (Llama, DeepSeek) for sensitive data with Azure OpenAI/OpenAI for generation where client policy allows.}
-            \resumeItem{Added guardrails, audit logging and policy enforcement, so auditors can trace every finding back to its source document. Live at \href{https://yanipro.ai/}{\underline{yanipro.ai}}.}
+            \resumeItem{Led the design of an agentic audit platform for BCM, SAMA and ISO compliance, including maturity assessments of policies, contracts and internal documents.}
+            \resumeItem{The LangGraph/LangChain workflow covers the whole audit: planning the engagement, building the risk and control matrix, running control tests and writing the report.}
+            \resumeItem{Built the RAG layer (vector store + semantic search) so findings are based on the client's actual documents rather than the model's general knowledge.}
+            \resumeItem{Sensitive data is handled by self-hosted Llama and DeepSeek models; Azure OpenAI/OpenAI is only used where the client's policy allows it.}
+            \resumeItem{Added guardrails, audit logs and policy checks. Auditors can follow any finding back to the document it came from. Live at \href{https://yanipro.ai/}{\underline{yanipro.ai}}.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{ActPilot -- AI Browser Agent} | \emph{Chrome Extension, Azure OpenAI, Groq}}{Aug 2026}
           \resumeItemListStart
-            \resumeItem{Built a Chrome/Edge extension (Manifest V3) that reads a page's visible text and a screenshot, then performs real actions on the page (fill fields, click, open links) from natural-language requests.}
-            \resumeItem{Designed the backend to return one structured JSON response per request, limited to a closed set of actions on elements the model was actually given, preventing hallucinated targets.}
-            \resumeItem{Enforced a hard safety rule: the agent fills forms but never submits, pays, deletes or sends anything without explicit instruction.}
-            \resumeItem{Runs on Azure OpenAI's vision model with automatic fallback to Groq on rate-limit errors, keeping the assistant responsive under load.}
-            \resumeItem{Added chart generation, branded PDF export of conversations and rate limiting; published on the Microsoft Edge Add-ons store.}
+            \resumeItem{Chrome/Edge extension (Manifest V3) that reads the page text plus a screenshot, then actually does things on the page, like filling fields, clicking buttons and opening links, based on what the user types.}
+            \resumeItem{The backend returns one JSON response per request, and the model can only choose from a fixed set of actions on elements it was shown. This stops it from inventing buttons that don't exist.}
+            \resumeItem{Hard safety rule: it will fill in a form but won't submit, pay, delete or send anything unless the user explicitly asks.}
+            \resumeItem{Uses Azure OpenAI's vision model and switches to Groq automatically when Azure hits rate limits.}
+            \resumeItem{Also draws charts and exports chats as branded PDFs, with rate limiting built in. Published on the Microsoft Edge Add-ons store.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{Private Knowledge Assistant} | \emph{Agentic RAG, Text-to-SQL, Web RAG, Azure OpenAI}}{Jan 2026 -- Oct 2026}
           \resumeItemListStart
-            \resumeItem{Built a private AI assistant that answers questions from a user's documents, web pages and live databases in one conversation; a tool-calling agent decides per question whether to search documents, query a database, do both, or simply reply.}
-            \resumeItem{Implemented document and web RAG over PDF, DOCX, TXT, images (OCR fallback for scanned pages) and website URLs, with per-user and per-chat isolation enforced at the vector-store layer.}
-            \resumeItem{Built text-to-SQL/NoSQL over PostgreSQL, MySQL, SQL Server, SQLite and MongoDB, using schema-aware RAG with few-shot examples seeded from foreign-key relationships and successful past queries.}
-            \resumeItem{Designed a five-layer, per-engine read-only guard (keyword blocking, forced rollback, statement timeouts, row caps) and Fernet-encrypted credentials, so connected databases can only be read.}
-            \resumeItem{Every answer cites its source (document page, URL or executed query); responses stream over Server-Sent Events, results render as charts, and accounts use JWT authentication. Live at \href{https://knowledgeassistant-ai.vercel.app}{\underline{knowledgeassistant-ai.vercel.app}}.}
+            \resumeItem{A private assistant that answers from your own documents, web pages and live databases in the same chat. A tool-calling agent decides for each question whether to search documents, query a database, do both, or just reply.}
+            \resumeItem{Document and web RAG over PDF, DOCX, TXT, images (OCR for scanned pages) and URLs. Every user's and every chat's data is kept separate at the vector-store level.}
+            \resumeItem{Text-to-SQL/NoSQL for PostgreSQL, MySQL, SQL Server, SQLite and MongoDB, using schema-aware RAG with few-shot examples taken from foreign keys and from queries that worked before.}
+            \resumeItem{Databases are strictly read-only: five layers of checks per engine (blocked keywords, forced rollback, statement timeouts, row limits), and credentials are encrypted with Fernet.}
+            \resumeItem{Answers cite the exact source (page, URL or the SQL that ran), stream over SSE and can be shown as charts. JWT login. Live at \href{https://knowledgeassistant-ai.vercel.app}{\underline{knowledgeassistant-ai.vercel.app}}.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{Private Voice Assistant} | \emph{Twilio, Whisper STT, Orpheus TTS}}{Aug 2025}
           \resumeItemListStart
-            \resumeItem{Built a runtime-configurable AI voice helpline for any business, reachable by real phone calls (Twilio) or a browser hold-to-talk demo, both sharing one Groq-powered pipeline.}
-            \resumeItem{Reduced the full conversational turn (speech-to-text, LLM, text-to-speech) to 2--2.7 seconds through connection warm-up and cached greetings.}
-            \resumeItem{Implemented automatic caller language detection from speech, so the assistant replies in the caller's language.}
-            \resumeItem{Integrated Twilio through HTTP polling instead of WebSocket media streams so the service runs on serverless infrastructure. Live at \href{https://voiceassistant-ai.vercel.app}{\underline{voiceassistant-ai.vercel.app}}.}
+            \resumeItem{AI phone helpline that any business can configure at runtime. Works on real calls through Twilio and in a browser hold-to-talk demo, both on the same Groq pipeline.}
+            \resumeItem{Got a full turn (speech-to-text, LLM, text-to-speech) down to 2--2.7 seconds by warming up connections and caching greetings.}
+            \resumeItem{Detects the caller's language from their speech and answers in that language.}
+            \resumeItem{Used HTTP polling with Twilio rather than WebSocket media streams so the whole thing could run serverless. Live at \href{https://voiceassistant-ai.vercel.app}{\underline{voiceassistant-ai.vercel.app}}.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{WellB -- AI-Powered Hotel Management System} | \emph{RAG, Llama, DeepSeek, OpenAI}}{Feb 2025}
           \resumeItemListStart
-            \resumeItem{Built the ``WellB'' hotel assistant on a RAG pipeline that combines locally deployed Llama and DeepSeek models with OpenAI GPT.}
-            \resumeItem{Enabled natural-language booking management, including edits with conflict detection and automated rescheduling (DeepSeek for multi-step reasoning).}
-            \resumeItem{Built an emergency alert system with real-time notifications and AI-based priority classification.}
-            \resumeItem{Automated contact extraction and creation with a locally hosted Llama model to keep guest data private.}
+            \resumeItem{Hotel assistant built on RAG, using local Llama and DeepSeek models alongside OpenAI GPT.}
+            \resumeItem{Users can book or change bookings in plain language; it checks for conflicts and reschedules automatically, with DeepSeek handling the multi-step reasoning.}
+            \resumeItem{Emergency alerts with real-time notifications, prioritised by the model.}
+            \resumeItem{Contact details are extracted and saved by a locally hosted Llama model, so guest data stays on our own servers.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{IntelliReport -- AI-Powered Report Generation} | \emph{Python, NLP, Transformers, FastAPI}}{Sep 2024}
           \resumeItemListStart
-            \resumeItem{Built a report-generation system with automated text correction, topic extraction and summarisation using BERT-based transformer models.}
-            \resumeItem{Combined extractive and abstractive summarisation to produce concise per-topic summaries that keep critical information.}
-            \resumeItem{Rendered reports as Markdown and HTML for the frontend, with PDF download.}
-            \resumeItem{Exposed the system as a FastAPI service with batch processing and real-time progress tracking for large documents.}
+            \resumeItem{Report generator that cleans up text, pulls out the main topics and summarises each one, using BERT-based models.}
+            \resumeItem{Mixes extractive and abstractive summarisation so summaries stay short without dropping key points.}
+            \resumeItem{Outputs Markdown/HTML for the frontend and a downloadable PDF.}
+            \resumeItem{Runs as a FastAPI service with batch jobs and live progress updates for long documents.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{Smart Media Monitoring Application} | \emph{Python, PyTorch}}{Aug 2023}
           \resumeItemListStart
-            \resumeItem{Led a media monitoring system combining speech-to-text, sentiment analysis, summarisation, topic modelling, facial recognition and OCR in one pipeline.}
-            \resumeItem{Worked with Urdu and English datasets so the system handles both languages.}
-            \resumeItem{Built a text detection and OCR pipeline for PDFs, images and tables in Urdu, English and Arabic.}
-            \resumeItem{Developed facial recognition to identify and track individuals across media content.}
+            \resumeItem{Led a media monitoring system that brings speech-to-text, sentiment analysis, summaries, topic modelling, face recognition and OCR together in one pipeline.}
+            \resumeItem{Trained and tested on both Urdu and English data.}
+            \resumeItem{OCR pipeline for PDFs, images and tables in Urdu, English and Arabic.}
+            \resumeItem{Face recognition to identify and follow people across media content.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{Smart Surveillance System} | \emph{Python, PyTorch, TensorFlow}}{Dec 2022}
           \resumeItemListStart
-            \resumeItem{Led AI modules for security monitoring over live and IP camera streams.}
-            \resumeItem{Real-time object detection: deployed low-latency detection and tracking models.}
-            \resumeItem{ANPR: built automatic number plate recognition for vehicle identification, with multi-language plate support.}
-            \resumeItem{Geofencing: defined and enforced virtual boundaries within camera streams for automated area monitoring.}
+            \resumeItem{Led the AI side of a security monitoring system running on live and IP camera streams.}
+            \resumeItem{Real-time object detection and tracking with low latency.}
+            \resumeItem{Number plate recognition (ANPR) for identifying vehicles, with support for plates in more than one language.}
+            \resumeItem{Geofencing: virtual boundaries drawn inside camera views for automatic area monitoring.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{AAQAB -- Satellite Imagery Intelligence} | \emph{Python, YOLO, PyTorch}}{Feb 2022}
           \resumeItemListStart
-            \resumeItem{Led object detection on high-resolution satellite imagery using YOLO and ResNet for geospatial intelligence.}
-            \resumeItem{Tiled large images by latitude and longitude and distributed processing across GPUs to make inference tractable.}
-            \resumeItem{Used SAHI sliding-window inference to improve detection and counting accuracy on small objects.}
+            \resumeItem{Led object detection on high-resolution satellite images using YOLO and ResNet.}
+            \resumeItem{The images were too large to process whole, so we tiled them by latitude and longitude and spread the work across GPUs.}
+            \resumeItem{Used SAHI sliding-window inference, which clearly improved detection and counting of small objects.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
