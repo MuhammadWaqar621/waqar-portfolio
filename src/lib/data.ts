@@ -9,7 +9,8 @@ export const profile = {
   github: "https://github.com/MuhammadWaqar621",
   linkedin: "https://www.linkedin.com/in/muhammadwaqar-ai/",
   whatsapp: "https://wa.me/923086715563",
-  bio: "I've spent the last 7+ years building AI systems that actually make it to production: RAG pipelines, multi-agent workflows, computer vision, you name it. Right now I lead the generative AI and compliance-automation work at Softoo, after running ML teams at Forbmax and Horizon Tech Services before that. I mix local and cloud LLMs (Llama, DeepSeek, Azure OpenAI) depending on what a project actually needs. It usually comes down to keeping data private without blowing up the inference bill.",
+  bio: "AI Lead Engineer with 7+ years of experience taking machine learning and generative AI systems from prototype to production. I lead agentic AI and RAG development at Softoo, including an LLM-driven audit platform for SAMA, ISO and BCM compliance, after leading ML teams at Forbmax and Horizon Tech Services. I build multi-agent workflows, RAG and text-to-SQL systems, and hybrid deployments that pair on-premise open-source LLMs with Azure OpenAI, so data-sensitive clients keep their data private at a sensible inference cost.",
+  summary: "AI Lead Engineer with 7+ years shipping production ML and generative AI systems: agentic RAG, multi-agent orchestration, text-to-SQL and on-premise LLMs.",
 };
 
 export const skillGroups = [
@@ -108,45 +109,46 @@ export const experience: Experience[] = [
     period: "May 2025 – Present",
     location: "Islamabad, Pakistan",
     bullets: [
-      "Lead the agentic AI and RAG work here, mostly enterprise automation and decision-support platforms.",
-      "Built multi-agent frameworks that can reason through multi-step tasks instead of following a fixed script.",
-      "Set up RAG pipelines with semantic search so the knowledge base actually answers questions instead of just storing documents.",
-      "Run SQLCoder, Llama, and Code Llama on-premise for clients who can't send data off-site, which also helps keep our inference costs down.",
-      "Built the AI audit platform that plans and runs compliance work (BCM, SAMA, ISO) end to end, including risk/control generation and reporting.",
+      "Lead agentic AI and RAG development for enterprise automation and decision-support platforms, owning the architecture from design through production.",
+      "Architected multi-agent workflows with LangGraph and LangChain that plan and execute multi-step tasks through tool calling, replacing fixed, rule-based pipelines.",
+      "Built RAG pipelines with vector databases and semantic search that ground LLM answers in enterprise knowledge bases and cite their sources.",
+      "Deployed SQLCoder, Llama and Code Llama on-premise for clients whose data cannot leave their network, keeping data private and lowering inference cost compared with hosted APIs.",
+      "Led development of the AI audit platform for BCM, SAMA and ISO compliance, covering risk and control generation, control testing and audit reporting.",
+      "Mentor junior engineers and set team practices for agent development and model governance in production.",
     ],
   },
   {
-    company: "Forbmax (pvt) Ltd",
+    company: "Forbmax (Pvt) Ltd",
     role: "AI Team Lead — Computer Vision, NLP, Data Science",
     period: "May 2023 – May 2025",
     location: "Islamabad, Pakistan",
     bullets: [
-      "Led a small team covering computer vision, NLP, and general ML, setting direction and doing a lot of the architecture myself.",
-      "Rebuilt our model pipelines end to end, which cut about 40% off the time from raw data to a deployed model.",
-      "Fine-tuned transformers, YOLO, and vision transformers for whatever the client's data actually looked like, since it rarely worked out of the box.",
-      "Built an active-learning annotation loop that cut manual labeling work by roughly 70%.",
-      "Pushed for proper APIs and microservices instead of one-off scripts, so models could actually plug into other products.",
+      "Led a team of machine learning engineers across computer vision, NLP and data science, setting technical direction and owning core system architecture.",
+      "Rebuilt end-to-end model pipelines (preprocessing, training, deployment) around automated workflows, improving operational efficiency by 40%.",
+      "Fine-tuned transformer, YOLO and vision transformer models with transfer learning to reach target accuracy on client-specific datasets.",
+      "Built an active-learning annotation system that reduced manual labelling effort by 70% while keeping label quality consistent.",
+      "Moved model delivery from one-off scripts to APIs and microservices, so models integrate cleanly with external products and platforms.",
     ],
   },
   {
     company: "Horizon Tech Services",
-    role: "Sr. AI Engineer",
+    role: "Senior AI Engineer",
     period: "Jun 2020 – Apr 2023",
     location: "Islamabad, Pakistan",
     bullets: [
-      "Owned ML projects start to finish and mentored a small team through data collection, training, and deployment.",
-      "Built preprocessing pipelines that made feature extraction and augmentation a lot less manual.",
-      "Spent a good chunk of time on object detection fine-tuning, which improved recognition and tracking accuracy.",
+      "Owned ML projects end to end (data collection, preprocessing, training, deployment) and mentored a team of engineers through each stage.",
+      "Built preprocessing pipelines that automated feature extraction and data augmentation, improving model performance and cutting manual data work.",
+      "Led fine-tuning of object detection and tracking models for production applications, improving recognition and tracking accuracy.",
     ],
   },
   {
-    company: "Lampro Mellon IT Solutions Pvt. Ltd",
+    company: "Lampro Mellon IT Solutions (Pvt) Ltd",
     role: "Python Developer",
     period: "Aug 2019 – May 2020",
     location: "Lahore, Pakistan",
     bullets: [
-      "Worked on software components early in my career, mostly around verification and design.",
-      "Wrote automated verification scripts so testing didn't have to be done by hand every time.",
+      "Developed Python software components with a focus on verification and high-level design.",
+      "Implemented algorithms and data-processing modules, and wrote automated verification scripts to replace manual testing.",
     ],
   },
 ];
@@ -163,12 +165,12 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    name: "Enterprise Compliance AI Agent Platform",
+    name: "Enterprise Compliance AI Agent Platform (Softoo)",
     liveUrl: "https://yanipro.ai/",
     period: "Sep 2026",
-    stack: ["Agentic AI", "LangGraph", "Risk & Control Automation", "SAMA / ISO / BCM"],
+    stack: ["Agentic AI", "LangGraph", "RAG", "Risk & Control Automation", "SAMA / ISO / BCM"],
     description:
-      "An AI audit platform covering BCM, SAMA, and ISO compliance work, including maturity assessments. It plans and runs the whole audit: generating the risk and control matrix, running the actual control tests, and writing the report, using a mix of local and cloud LLMs so auditors can trace every decision back to where it came from.",
+      "Led the design of an agentic AI audit platform for BCM, SAMA and ISO compliance, including maturity assessments. A LangGraph workflow plans the engagement, generates the risk and control matrix, runs control tests and writes an audit-ready report. Self-hosted models (Llama, DeepSeek) process sensitive data, Azure OpenAI handles generation where policy allows, and guardrails plus audit logging let auditors trace every finding back to its source document.",
   },
   {
     name: "ActPilot — AI Browser Agent",
@@ -178,7 +180,7 @@ export const projects: Project[] = [
     liveUrl: "https://microsoftedge.microsoft.com/addons/detail/actpilot/kbaigcjodbggmfampikpgmopjojkomid",
     liveLabel: "Get the extension",
     description:
-      "A browser extension that actually acts on the page for you. It reads the visible text, grabs a screenshot, and can fill fields, click buttons, or open links based on what you ask, then it can chart data it finds or export the whole conversation as a PDF. Runs on Azure OpenAI's vision model with an automatic fallback to Groq if Azure gets rate-limited. I built in a hard safety rule too: it'll fill out a form, but it won't hit submit, pay, delete, or send anything unless I explicitly tell it to.",
+      "A Chrome/Edge extension (Manifest V3) that reads a page's visible text and a screenshot, then performs real actions from natural-language requests: filling fields, clicking and opening links. The backend returns one structured JSON response limited to a closed set of actions on elements the model was actually given, which prevents hallucinated targets. A hard safety rule lets it fill forms but never submit, pay, delete or send without explicit instruction. Runs on Azure OpenAI's vision model with automatic fallback to Groq on rate limits, and supports chart generation and PDF export. Published on the Microsoft Edge Add-ons store.",
   },
   {
     name: "Private Knowledge Assistant — AI over Documents, Websites & Databases",
@@ -187,7 +189,7 @@ export const projects: Project[] = [
     period: "Jan – Oct 2026",
     stack: ["Agentic RAG", "Text-to-SQL", "Web RAG", "Read-only SQL Guard", "Azure OpenAI"],
     description:
-      "One private assistant for everything you know: your PDFs and Word files, website pages you add by URL, and your live databases (Postgres, MySQL, SQL Server, SQLite or MongoDB). The model decides for itself on every message whether to search your documents, query a database, do both, or just answer from general knowledge, so a simple hi gets a simple hi back. Every answer cites where it came from: the file and page, the URL, or the exact SQL it ran, and query results can be charted. Databases can only ever be read: five layers of guardrails (blocked keywords, forced rollbacks, timeouts, row caps) plus encrypted credentials, and every user's data is fully isolated.",
+      "A private AI assistant that answers questions from a user's documents (PDF, DOCX, TXT, scanned images), website pages and live databases (PostgreSQL, MySQL, SQL Server, SQLite, MongoDB) in one conversation. A tool-calling agent decides per question whether to search documents, query a database, do both, or simply reply. Every answer cites its source (document page, URL or executed query), and query results render as charts. A five-layer read-only guard (keyword blocking, forced rollback, timeouts, row caps) and encrypted credentials ensure databases can only be read, with per-user data isolation at the vector-store layer.",
   },
   {
     name: "Private Voice Assistant — Real-time AI Phone Helpline",
@@ -196,42 +198,42 @@ export const projects: Project[] = [
     period: "Aug 2025",
     stack: ["Twilio Voice", "Whisper STT", "Orpheus TTS", "Real-time Voice AI"],
     description:
-      "An AI phone helpline you can set up for any business on the fly. It works over a real phone call through Twilio or a hold-to-talk demo in the browser, with the same pipeline underneath (Groq for speech-to-text, the LLM, then text-to-speech). I got the round trip down to 2–2.7 seconds by warming up connections ahead of time and caching greetings. It also picks up the caller's language from their speech and responds in kind.",
+      "A runtime-configurable AI voice helpline for any business, reachable by real phone calls (Twilio) or a browser hold-to-talk demo, both sharing one Groq-powered pipeline (speech-to-text, LLM, text-to-speech). Connection warm-up and cached greetings bring a full conversational turn down to 2–2.7 seconds. It detects the caller's language from speech and replies in that language, and uses HTTP polling instead of WebSocket media streams so it runs on serverless infrastructure.",
   },
   {
     name: "WellB — AI-Powered Hotel Management System",
     period: "Feb 2025",
     stack: ["RAG", "Llama", "OpenAI"],
     description:
-      "A hotel management chatbot that mixes local Llama/DeepSeek models with OpenAI's GPT. It handles booking changes in plain language, flags emergencies by priority, and manages contacts automatically.",
+      "A hotel assistant built on a RAG pipeline that combines locally deployed Llama and DeepSeek models with OpenAI GPT. It manages bookings in natural language, including edits with conflict detection and automated rescheduling, classifies emergency alerts by priority, and extracts contacts with a local model to keep guest data private.",
   },
   {
     name: "IntelliReport — AI-Powered Report Generation",
     period: "Sep 2024",
     stack: ["BERT", "Text Summarization", "Topic Extraction", "FastAPI"],
     description:
-      "Takes long reports, pulls out the topics, and summarizes each one separately using BERT plus a mix of extractive and abstractive techniques. It also highlights the important parts on its own. Built as an API so it can chew through documents in batches.",
+      "A report-generation system that corrects text, extracts topics and summarises each one using BERT-based models with combined extractive and abstractive techniques. Reports render as Markdown/HTML with PDF download, and a FastAPI service handles batch processing with real-time progress tracking for large documents.",
   },
   {
     name: "Smart Media Monitoring Application",
     period: "Aug 2023",
     stack: ["Speech-to-Text", "Facial Recognition", "Multi-language OCR"],
     description:
-      "A media monitoring pipeline that transcribes speech, reads sentiment, summarizes content, models topics, recognizes faces, and does OCR across Urdu, English, and Arabic, all pulled together as one system instead of a bunch of separate tools.",
+      "Led a media monitoring system that combines speech-to-text, sentiment analysis, summarisation, topic modelling, facial recognition and OCR in one pipeline, with support for Urdu, English and Arabic across audio, PDFs, images and tables.",
   },
   {
     name: "Smart Surveillance System",
     period: "Dec 2022",
     stack: ["Object Detection", "ANPR", "Geofencing"],
     description:
-      "Real-time monitoring across live and IP camera feeds, covering object detection, number-plate recognition, geofencing, and video summarization so reviewing footage doesn't eat up your whole day.",
+      "Led AI modules for security monitoring over live and IP camera streams: low-latency object detection and tracking, automatic number plate recognition with multi-language support, and geofencing for automated area monitoring.",
   },
   {
     name: "AAQAB — Satellite Imagery Intelligence",
     period: "Feb 2022",
     stack: ["YOLO", "SAHI", "Distributed GPU Processing"],
     description:
-      "Object detection over high-resolution satellite imagery using YOLO and ResNet. Had to split the images across GPUs just to make it tractable, and automated the whole PRSS analysis workflow on top of that.",
+      "Led object detection on high-resolution satellite imagery using YOLO and ResNet. Large images are tiled by latitude and longitude and processed across GPUs, and SAHI sliding-window inference improves detection and counting accuracy on small objects.",
   },
 ];
 
@@ -255,11 +257,11 @@ export const publications: Publication[] = [
   {
     title: "Meter Digit Recognition Via Faster R-CNN",
     authors: "Muhammad Waqar, M. Waris, et al., M. Yousaf",
-    venue: "International Conference on Robotics and Automation in Industry (ICRAI)",
+    venue: "IEEE International Conference on Robotics and Automation in Industry (ICRAI)",
     date: "Oct 2019",
     doi: "10.1109/ICRAI47710.2019.8967357",
     url: "https://www.semanticscholar.org/paper/e04f83359dc0ebe44c124146d2879853ab0666be",
     summary:
-      "Grew out of my final-year project: a Faster R-CNN approach for reading digits off electric meters that held up under bad lighting, perspective distortion, and blur, and stayed accurate across different meter scales.",
+      "Developed from my final-year project: a Faster R-CNN approach for reading digits on electricity meters that remains accurate under poor lighting, perspective distortion, blur and varying meter scales.",
   },
 ];

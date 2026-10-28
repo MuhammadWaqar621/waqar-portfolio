@@ -14,8 +14,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://muhammadwaqar-ai.vercel.app"),
   title: `${profile.name} — ${profile.title}`,
-  description: profile.bio,
+  description: profile.summary,
+  openGraph: {
+    type: "profile",
+    url: "/",
+    title: `${profile.name} — ${profile.title}`,
+    description: profile.summary,
+    images: [{ url: "/profile.jpg", alt: profile.name }],
+  },
+  twitter: {
+    card: "summary",
+    title: `${profile.name} — ${profile.title}`,
+    description: profile.summary,
+    images: ["/profile.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
