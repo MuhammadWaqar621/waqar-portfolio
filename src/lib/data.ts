@@ -181,22 +181,13 @@ export const projects: Project[] = [
       "A browser extension that actually acts on the page for you. It reads the visible text, grabs a screenshot, and can fill fields, click buttons, or open links based on what you ask, then it can chart data it finds or export the whole conversation as a PDF. Runs on Azure OpenAI's vision model with an automatic fallback to Groq if Azure gets rate-limited. I built in a hard safety rule too: it'll fill out a form, but it won't hit submit, pay, delete, or send anything unless I explicitly tell it to.",
   },
   {
-    name: "Private Data Assistant — Text-to-SQL over Live Databases",
-    repoUrl: "https://github.com/MuhammadWaqar621/private-data-assistant",
-    liveUrl: "https://dataassistant-ai.vercel.app",
-    period: "Apr 2026",
-    stack: ["Text-to-SQL", "Multi-DB Adapters", "Read-only SQL Guard", "Fernet Encryption"],
+    name: "Private Knowledge Assistant — AI over Documents, Websites & Databases",
+    repoUrl: "https://github.com/MuhammadWaqar621/private-knowledge-assistant",
+    liveUrl: "https://knowledgeassistant-ai.vercel.app",
+    period: "Jan – Oct 2026",
+    stack: ["Agentic RAG", "Text-to-SQL", "Web RAG", "Read-only SQL Guard", "Azure OpenAI"],
     description:
-      "Lets you ask your own database questions in plain English. Works with Postgres, MySQL, SQL Server, SQLite, or MongoDB. It figures out which tables matter, writes the query, runs it, and can chart the result. The part I spent the most time on was making sure it can only ever read: five separate layers of guardrails (blocked keywords, forced rollbacks, timeouts, row caps) stop it from writing anything.",
-  },
-  {
-    name: "Private Document Assistant — Agentic RAG Chatbot",
-    repoUrl: "https://github.com/MuhammadWaqar621/private-document-assistant",
-    liveUrl: "https://documentassistant-ai.vercel.app",
-    period: "Jan 2026",
-    stack: ["Agentic RAG", "Azure OpenAI", "SSE Streaming", "Multi-tenant Isolation"],
-    description:
-      "A private chatbot for your own documents, including PDFs, DOCX, and even scanned images via OCR. Every user and every chat is fully isolated from the others. The model decides for itself whether it needs to dig through your documents, so it doesn't awkwardly refuse to just say hi back. Answers stream in as they're generated.",
+      "One private assistant for everything you know: your PDFs and Word files, website pages you add by URL, and your live databases (Postgres, MySQL, SQL Server, SQLite or MongoDB). The model decides for itself on every message whether to search your documents, query a database, do both, or just answer from general knowledge, so a simple hi gets a simple hi back. Every answer cites where it came from: the file and page, the URL, or the exact SQL it ran, and query results can be charted. Databases can only ever be read: five layers of guardrails (blocked keywords, forced rollbacks, timeouts, row caps) plus encrypted credentials, and every user's data is fully isolated.",
   },
   {
     name: "Private Voice Assistant — Real-time AI Phone Helpline",
