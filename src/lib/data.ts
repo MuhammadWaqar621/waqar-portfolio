@@ -7,7 +7,7 @@ export const profile = {
   email: "waqarsahi621@gmail.com",
   phone: "+92 308 6715563",
   github: "https://github.com/MuhammadWaqar621",
-  linkedin: "https://www.linkedin.com/in/muhammad-waqar-1a594411a/",
+  linkedin: "https://www.linkedin.com/in/muhammadwaqar-ai/",
   whatsapp: "https://wa.me/923086715563",
   bio: "I've spent the last 7+ years building AI systems that actually make it to production: RAG pipelines, multi-agent workflows, computer vision, you name it. Right now I lead the generative AI and compliance-automation work at Softoo, after running ML teams at Forbmax and Horizon Tech Services before that. I mix local and cloud LLMs (Llama, DeepSeek, Azure OpenAI) depending on what a project actually needs. It usually comes down to keeping data private without blowing up the inference bill.",
 };
